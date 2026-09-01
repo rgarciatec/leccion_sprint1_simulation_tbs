@@ -43,34 +43,14 @@ module bin2bcd_dual_tb;
         int tens;
         int ones;
         logic [BCD_WIDTH-1:0] bcd;
-        
+
         value_int = value;
         hundreds  = value_int / 100;
         tens      = (value_int % 100) / 10;
         ones      = value_int % 10;
         bcd       = {4'(hundreds), 4'(tens), 4'(ones)};
         return bcd;
-
     endfunction
-
-    task automatic check_case(input logic [BIN_WIDTH-1:0] value);
-        logic [BCD_WIDTH-1:0] expected;
-        int value_int;
-
-        value_int = value;
-        bin_in = value;
-        #COMB_SETTLE;
-
-        expected = expected_bcd(value);
-
-        if ((bcd_brute_force !== expected) || (bcd_double_dabble !== expected)) begin
-            $display("FAIL: value=%0d brute=%0h dd=%0h expected=%0h", value_int, bcd_brute_force, bcd_double_dabble, expected);
-            fail_count++;
-        end 
-        else begin
-            pass_count++;
-        end
-    endtask
 
     initial begin
         $timeformat(-9, 3, " ns", 6);
@@ -78,7 +58,16 @@ module bin2bcd_dual_tb;
         fail_count = 0;
 
         for (int i = 0; i <= MAX_VAL; i++) begin
-            check_case(i[BIN_WIDTH-1:0]);
+            bin_in = i[BIN_WIDTH-1:0];
+            #COMB_SETTLE;
+
+            if ((bcd_brute_force !== expected_bcd(bin_in)) || (bcd_double_dabble !== expected_bcd(bin_in))) begin
+                $display("FAIL: value=%0d brute=%0h dd=%0h expected=%0h", i, bcd_brute_force, bcd_double_dabble, expected_bcd(bin_in));
+                fail_count++;
+            end
+            else begin
+                pass_count++;
+            end
         end
 
         $display("----------------------------------------");
