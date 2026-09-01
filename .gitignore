@@ -18,6 +18,7 @@ quartus/*.bak
 quartus/*.qws
 quartus/*.qdf
 quartus/*.rpt
+quartus/c5_pin_model_dump.txt
 quartus/*.sof
 quartus/*.pof
 quartus/*.cdf
