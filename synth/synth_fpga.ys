@@ -1,0 +1,19 @@
+plugin -i slang
+
+read_slang --top bin2bcd_decoder_brute_force \
+    ../blocks/bin2bcd/bin2bcd_pkg.sv \
+    ../blocks/bin2bcd/bin2bcd_decoder_brute_force.sv
+
+synth_intel_alm -top bin2bcd_decoder_brute_force
+write_verilog -noattr -sv fpga_brute_force.sv
+show -format svg -prefix fpga_brute_force
+
+design -reset
+
+read_slang --top bin2bcd_decoder_double_dabble \
+    ../blocks/bin2bcd/bin2bcd_pkg.sv \
+    ../blocks/bin2bcd/bin2bcd_decoder_double_dabble.sv
+
+synth_intel_alm -top bin2bcd_decoder_double_dabble
+write_verilog -noattr -sv fpga_double_dabble.sv
+show -format svg -prefix fpga_double_dabble

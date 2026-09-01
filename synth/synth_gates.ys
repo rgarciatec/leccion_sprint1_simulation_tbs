@@ -1,0 +1,29 @@
+plugin -i slang
+
+read_slang --top bin2bcd_decoder_brute_force \
+    ../blocks/bin2bcd/bin2bcd_pkg.sv \
+    ../blocks/bin2bcd/bin2bcd_decoder_brute_force.sv
+
+hierarchy -check -top bin2bcd_decoder_brute_force
+proc
+opt
+synth
+abc -g gates
+write_verilog -noattr -sv gate_brute_force.sv
+write_json gate_brute_force.json
+show -format svg -prefix gate_brute_force
+
+design -reset
+
+read_slang --top bin2bcd_decoder_double_dabble \
+    ../blocks/bin2bcd/bin2bcd_pkg.sv \
+    ../blocks/bin2bcd/bin2bcd_decoder_double_dabble.sv
+
+hierarchy -check -top bin2bcd_decoder_double_dabble
+proc
+opt
+synth
+abc -g gates
+write_verilog -noattr -sv gate_double_dabble.sv
+write_json gate_double_dabble.json
+show -format svg -prefix gate_double_dabble
