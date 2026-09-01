@@ -1,0 +1,95 @@
+# Local editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Quartus generated outputs
+quartus/db/
+quartus/incremental_db/
+quartus/output_files/
+quartus/simulation/
+quartus/*.bak
+quartus/*.qws
+quartus/*.qdf
+quartus/*.rpt
+quartus/*.sof
+quartus/*.pof
+quartus/*.cdf
+quartus/*.smsg
+quartus/*.summary
+quartus/*.done
+quartus/*.pin
+quartus/*.jdi
+quartus/*.asm
+quartus/*.sta
+quartus/*.eda
+quartus/*.qdb
+quartus/*.qpg
+quartus/*.qtl
+quartus/*.ddb
+quartus/*.sld
+quartus/*.log
+
+# Yosys / synthesis outputs
+synth/*.log
+synth/*.svg
+synth/*.json
+synth/*.v
+synth/*.vcd
+synth/*.dot
+synth/*.rpt
+synth/*.html
+synth/*.txt
+
+# Verible / lint outputs
+lint/*.log
+lint/*.html
+lint/*.json
+
+# Simulation / test outputs
+**/*.vcd
+**/*.vcd.gz
+**/transcript
+**/work/
+**/sim_build/
+**/*.log
+**/*.out
+**/*.wlf
+**/*.cf
+
+# Generic build artifacts
+*.bak
+*.orig
+*.rej
+*.tmp
+*.cache
+*.stamp
+*.status
+
+# Python cruft (if used in tests)
+__pycache__/
+*.pyc
+*.pyo
+
+# Common generated directories
+build/
+bin/
+dist/
+obj/
+
+# Keep project sources and metadata tracked
+!quartus/*.qpf
+!quartus/*.qsf
+!quartus/*.sdc
+!quartus/*.sv
+!quartus/*.tcl
+!quartus/*.qip
+!quartus/*.qsys
+!quartus/*.qip
+!quartus/*.qsys

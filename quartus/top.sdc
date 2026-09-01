@@ -1,0 +1,1 @@
+set_max_delay -from [ get_ports { sw[*] }] -to [ get_ports {hex*[*] ledg[*] ledr[*]}] 20.0
