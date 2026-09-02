@@ -1,5 +1,7 @@
 # Top-level testbench and simulation flow
 
+AI usage disclaimer: This README was created or assisted using AI tooling. It was reviewed and adjusted to reflect the actual RTL and post-fit simulation flow used in this project.
+
 This folder contains the validation setup for the full top-level design, not just the individual blocks.
 
 The purpose of this testbench is to verify the integrated system:
@@ -125,6 +127,18 @@ Plain RTL simulation checks your source logic in isolation.
 GLS checks the actual post-fit FPGA implementation, including primitive mapping and timing annotation.
 
 This is why the Makefile has two different paths.
+
+## References and source material
+
+This document reflects the actual implementation and validation files used by the project, including:
+
+- [../../quartus/top.qsf](../../quartus/top.qsf) : Quartus project configuration and testbench assignments
+- [../../quartus/top.sdc](../../quartus/top.sdc) : SDC timing constraints
+- [../../top/top.sv](../../top/top.sv) : integrated design under test
+- [../../tb/top/top_tb.sv](../../tb/top/top_tb.sv) : full-system verification testbench
+- [../../tb/bcd2seven_seg/bcd2seven_seg_tb.sv](../../tb/bcd2seven_seg/bcd2seven_seg_tb.sv) : block-level 7-segment decoder testbench
+- [../../tb/bin2bcd/bin2bcd_dual_tb.sv](../../tb/bin2bcd/bin2bcd_dual_tb.sv) : decoder comparison testbench
+- [../../tb/top/Makefile](../../tb/top/Makefile) : RTL and GLS target flow
 
 ## Repo hygiene
 

@@ -1,0 +1,6455 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1948"
+   height="1445"
+   version="1.1"
+   id="svg4433"
+   sodipodi:docname="sch_gates_double_dabble.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:s="https://github.com/nturley/netlistsvg">
+  <defs
+     id="defs4437" />
+  <sodipodi:namedview
+     id="namedview4435"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.3362423"
+     inkscape:cx="1023.0718"
+     inkscape:cy="721.20611"
+     inkscape:window-width="1920"
+     inkscape:window-height="987"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4433" />
+  <style
+     id="style2583">svg {
+    stroke:#000;
+    fill:none;
+  }
+  text {
+    fill:#000;
+    stroke:none;
+    font-size:10px;
+    font-weight: bold;
+    font-family: &quot;Courier New&quot;, monospace;
+  }
+  .nodelabel {
+    text-anchor: middle;
+  }
+  .inputPortLabel {
+    text-anchor: end;
+  }
+  .splitjoinBody {
+    fill:#000;
+  }</style>
+  <g
+     s:type="not"
+     transform="translate(657,653)"
+     s:width="30"
+     s:height="20"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2890">
+    <s:alias
+       val="$_NOT_" />
+    <s:alias
+       val="$not" />
+    <s:alias
+       val="$logic_not" />
+    <path
+       d="M0,0 L0,20 L20,10 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2890"
+       id="path2585" />
+    <circle
+       cx="23"
+       cy="10"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2890"
+       id="circle2587" />
+    <g
+       s:x="0"
+       s:y="10"
+       s:pid="A"
+       id="g2589" />
+    <g
+       s:x="25"
+       s:y="10"
+       s:pid="Y"
+       id="g2591" />
+  </g>
+  <g
+     s:type="not"
+     transform="translate(1604,205)"
+     s:width="30"
+     s:height="20"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2891">
+    <s:alias
+       val="$_NOT_" />
+    <s:alias
+       val="$not" />
+    <s:alias
+       val="$logic_not" />
+    <path
+       d="M0,0 L0,20 L20,10 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2891"
+       id="path2594" />
+    <circle
+       cx="23"
+       cy="10"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2891"
+       id="circle2596" />
+    <g
+       s:x="0"
+       s:y="10"
+       s:pid="A"
+       id="g2598" />
+    <g
+       s:x="25"
+       s:y="10"
+       s:pid="Y"
+       id="g2600" />
+  </g>
+  <g
+     s:type="reduce_nor"
+     transform="translate(175,822)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2892">
+    <s:alias
+       val="$nor" />
+    <s:alias
+       val="$reduce_nor" />
+    <s:alias
+       val="$_NOR_" />
+    <s:alias
+       val="$_ORNOT_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2892"
+       id="path2603" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2892"
+       id="path2605" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2892"
+       id="circle2607" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2609" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2611" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2613" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(454,867)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2893">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2893"
+       id="path2616" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2893"
+       id="path2618" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2620" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2622" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2624" />
+  </g>
+  <g
+     s:type="and"
+     transform="translate(1368.6666666666667,1101)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2894">
+    <s:alias
+       val="$and" />
+    <s:alias
+       val="$logic_and" />
+    <s:alias
+       val="$_AND_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2894"
+       id="path2627" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2629" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2631" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2633" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(246,705)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2895">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2895"
+       id="path2636" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2895"
+       id="circle2638" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2640" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2642" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2644" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(246,765)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2896">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2896"
+       id="path2647" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2896"
+       id="circle2649" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2651" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2653" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2655" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(317,757.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2897">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2897"
+       id="path2658" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2897"
+       id="path2660" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2662" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2664" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2666" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(382,795)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2898">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2898"
+       id="path2669" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2898"
+       id="path2671" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2673" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2675" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2677" />
+  </g>
+  <g
+     s:type="and"
+     transform="translate(382,852)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2899">
+    <s:alias
+       val="$and" />
+    <s:alias
+       val="$logic_and" />
+    <s:alias
+       val="$_AND_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2899"
+       id="path2680" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2682" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2684" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2686" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(452,976.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2900">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2900"
+       id="path2689" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2900"
+       id="circle2691" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2693" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2695" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2697" />
+  </g>
+  <g
+     s:type="and"
+     transform="translate(523,874.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2901">
+    <s:alias
+       val="$and" />
+    <s:alias
+       val="$logic_and" />
+    <s:alias
+       val="$_AND_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2901"
+       id="path2700" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2702" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2704" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2706" />
+  </g>
+  <g
+     s:type="reduce_nor"
+     transform="translate(1454,1228.5)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2902">
+    <s:alias
+       val="$nor" />
+    <s:alias
+       val="$reduce_nor" />
+    <s:alias
+       val="$_NOR_" />
+    <s:alias
+       val="$_ORNOT_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2902"
+       id="path2709" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2902"
+       id="path2711" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2902"
+       id="circle2713" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2715" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2717" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2719" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(655.6666666666666,739)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2903">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2903"
+       id="path2722" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2903"
+       id="path2724" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2726" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2728" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2730" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(588,904.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2904">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2904"
+       id="path2733" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2904"
+       id="path2735" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2737" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2739" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2741" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(655,897)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2905">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2905"
+       id="path2744" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2905"
+       id="circle2746" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2748" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2750" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2752" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(726,889.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2906">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2906"
+       id="path2755" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2906"
+       id="circle2757" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2759" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2761" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2763" />
+  </g>
+  <g
+     s:type="reduce_nxor"
+     transform="translate(653,513)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2907">
+    <s:alias
+       val="$xnor" />
+    <s:alias
+       val="$reduce_xnor" />
+    <s:alias
+       val="$_XNOR_" />
+    <path
+       d="M3,0 A30 25 0 0 1 3,25 A30 25 0 0 0 33,12.5 A30 25 0 0 0 3,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2907"
+       id="path2766" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2907"
+       id="path2768" />
+    <circle
+       cx="35"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2907"
+       id="circle2770" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2772" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2774" />
+    <g
+       s:x="38"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2776" />
+  </g>
+  <g
+     s:type="reduce_nor"
+     transform="translate(939,505.5)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2908">
+    <s:alias
+       val="$nor" />
+    <s:alias
+       val="$reduce_nor" />
+    <s:alias
+       val="$_NOR_" />
+    <s:alias
+       val="$_ORNOT_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2908"
+       id="path2779" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2908"
+       id="path2781" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2908"
+       id="circle2783" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2785" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2787" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2789" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(728,543)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2909">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2909"
+       id="path2792" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2909"
+       id="path2794" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2796" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2798" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2800" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(797,859.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2910">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2910"
+       id="path2803" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2910"
+       id="circle2805" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2807" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2809" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2811" />
+  </g>
+  <g
+     s:type="reduce_nor"
+     transform="translate(726,603)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2911">
+    <s:alias
+       val="$nor" />
+    <s:alias
+       val="$reduce_nor" />
+    <s:alias
+       val="$_NOR_" />
+    <s:alias
+       val="$_ORNOT_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2911"
+       id="path2814" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2911"
+       id="path2816" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2911"
+       id="circle2818" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2820" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2822" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2824" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(728,663)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2912">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2912"
+       id="path2827" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2912"
+       id="path2829" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2831" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2833" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2835" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(797,655.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2913">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2913"
+       id="path2838" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2913"
+       id="circle2840" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2842" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2844" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2846" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(868,867)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2914">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2914"
+       id="path2849" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2914"
+       id="circle2851" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2853" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2855" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2857" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(941,403.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2915">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2915"
+       id="path2860" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2915"
+       id="path2862" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2864" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2866" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2868" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1012,396)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2916">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2916"
+       id="path2871" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2916"
+       id="circle2873" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2875" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2877" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2879" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1012,456)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2917">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2917"
+       id="path2882" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2917"
+       id="circle2884" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2886" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2888" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2890" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1083,448.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2918">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2918"
+       id="path2893" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2918"
+       id="circle2895" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2897" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2899" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2901" />
+  </g>
+  <g
+     s:type="reduce_nxor"
+     transform="translate(1010,346.5)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2919">
+    <s:alias
+       val="$xnor" />
+    <s:alias
+       val="$reduce_xnor" />
+    <s:alias
+       val="$_XNOR_" />
+    <path
+       d="M3,0 A30 25 0 0 1 3,25 A30 25 0 0 0 33,12.5 A30 25 0 0 0 3,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2919"
+       id="path2904" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2919"
+       id="path2906" />
+    <circle
+       cx="35"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2919"
+       id="circle2908" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2910" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2912" />
+    <g
+       s:x="38"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2914" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(1085,376.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2920">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2920"
+       id="path2917" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2920"
+       id="path2919" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g2921" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g2923" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2925" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1159,456)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2921">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2921"
+       id="path2928" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2921"
+       id="circle2930" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2932" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2934" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2936" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1083,648)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2922">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2922"
+       id="path2939" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2922"
+       id="circle2941" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2943" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2945" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2947" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1083,904.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2923">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2923"
+       id="path2950" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2923"
+       id="circle2952" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2954" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2956" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2958" />
+  </g>
+  <g
+     s:type="and"
+     transform="translate(1161,897)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2924">
+    <s:alias
+       val="$and" />
+    <s:alias
+       val="$logic_and" />
+    <s:alias
+       val="$_AND_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2924"
+       id="path2961" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2963" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2965" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2967" />
+  </g>
+  <g
+     s:type="and"
+     transform="translate(1230,1055)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2925">
+    <s:alias
+       val="$and" />
+    <s:alias
+       val="$logic_and" />
+    <s:alias
+       val="$_AND_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2925"
+       id="path2970" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2972" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2974" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2976" />
+  </g>
+  <g
+     s:type="and"
+     transform="translate(1456,1168.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2926">
+    <s:alias
+       val="$and" />
+    <s:alias
+       val="$logic_and" />
+    <s:alias
+       val="$_AND_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2926"
+       id="path2979" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2981" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2983" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2985" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1672,1236)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2927">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2927"
+       id="path2988" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2927"
+       id="circle2990" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g2992" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g2994" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g2996" />
+  </g>
+  <g
+     s:type="and"
+     transform="translate(1456,1108.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2928">
+    <s:alias
+       val="$and" />
+    <s:alias
+       val="$logic_and" />
+    <s:alias
+       val="$_AND_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2928"
+       id="path2999" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3001" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3003" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3005" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1530,1267)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2929">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2929"
+       id="path3008" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2929"
+       id="circle3010" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3012" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3014" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3016" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(1674,1297)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2930">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2930"
+       id="path3019" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2930"
+       id="path3021" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3023" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3025" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3027" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1745,1289.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2931">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2931"
+       id="path3030" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2931"
+       id="circle3032" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3034" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3036" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3038" />
+  </g>
+  <g
+     s:type="reduce_nor"
+     transform="translate(1530,1176)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2932">
+    <s:alias
+       val="$nor" />
+    <s:alias
+       val="$reduce_nor" />
+    <s:alias
+       val="$_NOR_" />
+    <s:alias
+       val="$_ORNOT_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2932"
+       id="path3041" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2932"
+       id="path3043" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2932"
+       id="circle3045" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3047" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3049" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3051" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1601,1168.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2933">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2933"
+       id="path3054" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2933"
+       id="circle3056" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3058" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3060" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3062" />
+  </g>
+  <g
+     s:type="reduce_nor"
+     transform="translate(1601,984)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2934">
+    <s:alias
+       val="$nor" />
+    <s:alias
+       val="$reduce_nor" />
+    <s:alias
+       val="$_NOR_" />
+    <s:alias
+       val="$_ORNOT_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2934"
+       id="path3065" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2934"
+       id="path3067" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2934"
+       id="circle3069" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3071" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3073" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3075" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(1603,1044)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2935">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2935"
+       id="path3078" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2935"
+       id="path3080" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3082" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3084" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3086" />
+  </g>
+  <g
+     s:type="and"
+     transform="translate(1674,1036.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2936">
+    <s:alias
+       val="$and" />
+    <s:alias
+       val="$logic_and" />
+    <s:alias
+       val="$_AND_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2936"
+       id="path3089" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3091" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3093" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3095" />
+  </g>
+  <g
+     s:type="and"
+     transform="translate(1674,1161)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2937">
+    <s:alias
+       val="$and" />
+    <s:alias
+       val="$logic_and" />
+    <s:alias
+       val="$_AND_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2937"
+       id="path3098" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3100" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3102" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3104" />
+  </g>
+  <g
+     s:type="reduce_nxor"
+     transform="translate(1743,1153.5)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2938">
+    <s:alias
+       val="$xnor" />
+    <s:alias
+       val="$reduce_xnor" />
+    <s:alias
+       val="$_XNOR_" />
+    <path
+       d="M3,0 A30 25 0 0 1 3,25 A30 25 0 0 0 33,12.5 A30 25 0 0 0 3,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2938"
+       id="path3107" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2938"
+       id="path3109" />
+    <circle
+       cx="35"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2938"
+       id="circle3111" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3113" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3115" />
+    <g
+       s:x="38"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3117" />
+  </g>
+  <g
+     s:type="reduce_nxor"
+     transform="translate(1743,1005.5)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2939">
+    <s:alias
+       val="$xnor" />
+    <s:alias
+       val="$reduce_xnor" />
+    <s:alias
+       val="$_XNOR_" />
+    <path
+       d="M3,0 A30 25 0 0 1 3,25 A30 25 0 0 0 33,12.5 A30 25 0 0 0 3,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2939"
+       id="path3120" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2939"
+       id="path3122" />
+    <circle
+       cx="35"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2939"
+       id="circle3124" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3126" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3128" />
+    <g
+       s:x="38"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3130" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(1297,237)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2940">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2940"
+       id="path3133" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2940"
+       id="path3135" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3137" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3139" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3141" />
+  </g>
+  <g
+     s:type="reduce_nxor"
+     transform="translate(1366,347)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2941">
+    <s:alias
+       val="$xnor" />
+    <s:alias
+       val="$reduce_xnor" />
+    <s:alias
+       val="$_XNOR_" />
+    <path
+       d="M3,0 A30 25 0 0 1 3,25 A30 25 0 0 0 33,12.5 A30 25 0 0 0 3,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2941"
+       id="path3144" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2941"
+       id="path3146" />
+    <circle
+       cx="35"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2941"
+       id="circle3148" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3150" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3152" />
+    <g
+       s:x="38"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3154" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(1456,934.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2942">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2942"
+       id="path3157" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2942"
+       id="path3159" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3161" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3163" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3165" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1368,229.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2943">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2943"
+       id="path3168" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2943"
+       id="circle3170" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3172" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3174" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3176" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(1368.6666666666667,289.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2944">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2944"
+       id="path3179" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2944"
+       id="path3181" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3183" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3185" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3187" />
+  </g>
+  <g
+     s:type="and"
+     transform="translate(1456,814.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2945">
+    <s:alias
+       val="$and" />
+    <s:alias
+       val="$logic_and" />
+    <s:alias
+       val="$_AND_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2945"
+       id="path3190" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3192" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3194" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3196" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(1532,807)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2946">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2946"
+       id="path3199" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2946"
+       id="path3201" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3203" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3205" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3207" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1295,889.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2947">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2947"
+       id="path3210" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2947"
+       id="circle3212" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3214" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3216" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3218" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(1368.6666666666667,882)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2948">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2948"
+       id="path3221" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2948"
+       id="path3223" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3225" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3227" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3229" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1454,874.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2949">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2949"
+       id="path3232" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2949"
+       id="circle3234" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3236" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3238" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3240" />
+  </g>
+  <g
+     s:type="reduce_nor"
+     transform="translate(1672,927)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2950">
+    <s:alias
+       val="$nor" />
+    <s:alias
+       val="$reduce_nor" />
+    <s:alias
+       val="$_NOR_" />
+    <s:alias
+       val="$_ORNOT_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2950"
+       id="path3243" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2950"
+       id="path3245" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2950"
+       id="circle3247" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3249" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3251" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3253" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1745,919.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2951">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2951"
+       id="path3256" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2951"
+       id="circle3258" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3260" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3262" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3264" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1530,747)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2952">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2952"
+       id="path3267" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2952"
+       id="circle3269" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3271" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3273" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3275" />
+  </g>
+  <g
+     s:type="and"
+     transform="translate(1603,814.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2953">
+    <s:alias
+       val="$and" />
+    <s:alias
+       val="$logic_and" />
+    <s:alias
+       val="$_AND_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2953"
+       id="path3278" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3280" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3282" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3284" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1672,287)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2954">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2954"
+       id="path3287" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2954"
+       id="circle3289" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3291" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3293" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3295" />
+  </g>
+  <g
+     s:type="reduce_nxor"
+     transform="translate(1743,354.5)"
+     s:width="33"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2955">
+    <s:alias
+       val="$xnor" />
+    <s:alias
+       val="$reduce_xnor" />
+    <s:alias
+       val="$_XNOR_" />
+    <path
+       d="M3,0 A30 25 0 0 1 3,25 A30 25 0 0 0 33,12.5 A30 25 0 0 0 3,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2955"
+       id="path3298" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2955"
+       id="path3300" />
+    <circle
+       cx="35"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2955"
+       id="circle3302" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3304" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3306" />
+    <g
+       s:x="38"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3308" />
+  </g>
+  <g
+     s:type="or"
+     transform="translate(1674,227)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2956">
+    <s:alias
+       val="$or" />
+    <s:alias
+       val="$logic_or" />
+    <s:alias
+       val="$_OR_" />
+    <path
+       d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2956"
+       id="path3311" />
+    <path
+       d="M0,0 A30 25 0 0 1 0,25"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2956"
+       id="path3313" />
+    <g
+       s:x="3"
+       s:y="5"
+       s:pid="A"
+       id="g3315" />
+    <g
+       s:x="3"
+       s:y="20"
+       s:pid="B"
+       id="g3317" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3319" />
+  </g>
+  <g
+     s:type="nand"
+     transform="translate(1745,294.5)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2957">
+    <s:alias
+       val="$nand" />
+    <s:alias
+       val="$logic_nand" />
+    <s:alias
+       val="$_NAND_" />
+    <s:alias
+       val="$_ANDNOT_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2957"
+       id="path3322" />
+    <circle
+       cx="34"
+       cy="12.5"
+       r="3"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2957"
+       id="circle3324" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3326" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3328" />
+    <g
+       s:x="36"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3330" />
+  </g>
+  <g
+     s:type="and"
+     transform="translate(1745.6666666666667,1343)"
+     s:width="30"
+     s:height="25"
+     id="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2958">
+    <s:alias
+       val="$and" />
+    <s:alias
+       val="$logic_and" />
+    <s:alias
+       val="$_AND_" />
+    <path
+       d="M0,0 L0,25 L15,25 A15 12.5 0 0 0 15,0 Z"
+       class="cell_$abc$2889$auto$blifparse.cc:397:parse_blif$2958"
+       id="path3333" />
+    <g
+       s:x="0"
+       s:y="5"
+       s:pid="A"
+       id="g3335" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="B"
+       id="g3337" />
+    <g
+       s:x="30"
+       s:y="12.5"
+       s:pid="Y"
+       id="g3339" />
+  </g>
+  <g
+     s:type="inputExt"
+     transform="translate(12,34.5)"
+     s:width="30"
+     s:height="20"
+     id="cell_bin_in">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_bin_in"
+       s:attribute="ref"
+       id="text3342">bin_in</text>
+    <s:alias
+       val="$_inputExt_" />
+    <path
+       d="M0,0 L0,20 L15,20 L30,10 L15,0 Z"
+       class="cell_bin_in"
+       id="path3344" />
+    <g
+       s:x="28"
+       s:y="10"
+       s:pid="Y"
+       id="g3346" />
+  </g>
+  <g
+     s:type="outputExt"
+     transform="translate(1894,1175.5)"
+     s:width="30"
+     s:height="20"
+     id="cell_bcd_out">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_bcd_out"
+       s:attribute="ref"
+       id="text3349">bcd_out</text>
+    <s:alias
+       val="$_outputExt_" />
+    <path
+       d="M30,0 L30,20 L15,20 L0,10 L15,0 Z"
+       class="cell_bcd_out"
+       id="path3351" />
+    <g
+       s:x="0"
+       s:y="10"
+       s:pid="A"
+       id="g3353" />
+  </g>
+  <g
+     s:type="constant"
+     transform="translate(1745,1413)"
+     s:width="30"
+     s:height="20"
+     id="cell_00">
+    <text
+       x="15"
+       y="-4"
+       class="nodelabel cell_00"
+       s:attribute="ref"
+       id="text3356">00</text>
+    <s:alias
+       val="$_constant_" />
+    <rect
+       width="30"
+       height="20"
+       class="cell_00"
+       id="rect3358" />
+    <g
+       s:x="30"
+       s:y="10"
+       s:pid="Y"
+       id="g3360" />
+  </g>
+  <g
+     s:type="join"
+     transform="translate(1851,1165)"
+     s:width="4"
+     s:height="40"
+     id="cell_$join$,2,10,11,12,13,14,15,16,17,18,79,80,">
+    <rect
+       width="5"
+       height="220"
+       class="splitjoinBody"
+       s:generic="body"
+       id="rect3363" />
+    <s:alias
+       val="$_join_" />
+    <g
+       s:x="5"
+       s:y="20"
+       s:pid="out"
+       id="g3365" />
+    <g
+       transform="translate(0,10)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="g3369">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel"
+         id="text3367">0</text>
+    </g>
+    <g
+       transform="translate(0,30)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="g3373">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel"
+         id="text3371">1</text>
+    </g>
+    <g
+       transform="translate(0,50)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="g3377">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel"
+         id="text3375">2</text>
+    </g>
+    <g
+       transform="translate(0,70)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="g3381">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel"
+         id="text3379">3</text>
+    </g>
+    <g
+       transform="translate(0,90)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="g3385">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel"
+         id="text3383">4</text>
+    </g>
+    <g
+       transform="translate(0,110)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="g3389">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel"
+         id="text3387">5</text>
+    </g>
+    <g
+       transform="translate(0,130)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="g3393">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel"
+         id="text3391">6</text>
+    </g>
+    <g
+       transform="translate(0,150)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="g3397">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel"
+         id="text3395">7</text>
+    </g>
+    <g
+       transform="translate(0,170)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="g3401">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel"
+         id="text3399">8</text>
+    </g>
+    <g
+       transform="translate(0,190)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="g3405">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel"
+         id="text3403">9</text>
+    </g>
+    <g
+       transform="translate(0,210)"
+       s:x="0"
+       s:y="10"
+       s:pid="in0"
+       id="g3409">
+      <text
+         x="-3"
+         y="-4"
+         class="inputPortLabel"
+         id="text3407">10:11</text>
+    </g>
+  </g>
+  <g
+     s:type="split"
+     transform="translate(83,24)"
+     s:width="5"
+     s:height="40"
+     id="cell_$split$,2,3,4,5,6,7,8,9,">
+    <rect
+       width="5"
+       height="160"
+       class="splitjoinBody"
+       s:generic="body"
+       id="rect3412" />
+    <s:alias
+       val="$_split_" />
+    <g
+       s:x="0"
+       s:y="20"
+       s:pid="in"
+       id="g3414" />
+    <g
+       transform="translate(4,10)"
+       s:x="4"
+       s:y="10"
+       s:pid="out0"
+       id="g3418">
+      <text
+         x="5"
+         y="-4"
+         id="text3416">4</text>
+    </g>
+    <g
+       transform="translate(4,30)"
+       s:x="4"
+       s:y="10"
+       s:pid="out0"
+       id="g3422">
+      <text
+         x="5"
+         y="-4"
+         id="text3420">1</text>
+    </g>
+    <g
+       transform="translate(4,50)"
+       s:x="4"
+       s:y="10"
+       s:pid="out0"
+       id="g3426">
+      <text
+         x="5"
+         y="-4"
+         id="text3424">5</text>
+    </g>
+    <g
+       transform="translate(4,70)"
+       s:x="4"
+       s:y="10"
+       s:pid="out0"
+       id="g3430">
+      <text
+         x="5"
+         y="-4"
+         id="text3428">7</text>
+    </g>
+    <g
+       transform="translate(4,90)"
+       s:x="4"
+       s:y="10"
+       s:pid="out0"
+       id="g3434">
+      <text
+         x="5"
+         y="-4"
+         id="text3432">6</text>
+    </g>
+    <g
+       transform="translate(4,110)"
+       s:x="4"
+       s:y="10"
+       s:pid="out0"
+       id="g3438">
+      <text
+         x="5"
+         y="-4"
+         id="text3436">3</text>
+    </g>
+    <g
+       transform="translate(4,130)"
+       s:x="4"
+       s:y="10"
+       s:pid="out0"
+       id="g3442">
+      <text
+         x="5"
+         y="-4"
+         id="text3440">2</text>
+    </g>
+    <g
+       transform="translate(4,150)"
+       s:x="4"
+       s:y="10"
+       s:pid="out0"
+       id="g3446">
+      <text
+         x="5"
+         y="-4"
+         id="text3444">0</text>
+    </g>
+  </g>
+  <line
+     x1="87.5"
+     x2="87.5"
+     y1="34"
+     y2="12"
+     class="net_6"
+     id="line3449" />
+  <line
+     x1="87.5"
+     x2="145"
+     y1="12"
+     y2="12"
+     class="net_6"
+     id="line3451" />
+  <line
+     x1="145"
+     x2="145"
+     y1="12"
+     y2="694"
+     class="net_6"
+     id="line3453" />
+  <line
+     x1="145"
+     x2="498"
+     y1="694"
+     y2="694"
+     class="net_6"
+     id="line3455" />
+  <line
+     x1="498"
+     x2="498"
+     y1="694"
+     y2="663"
+     class="net_6"
+     id="line3457" />
+  <circle
+     cx="145"
+     cy="694"
+     r="2"
+     style="fill:#000"
+     class="net_6"
+     id="circle3459" />
+  <circle
+     cx="498"
+     cy="694"
+     r="2"
+     style="fill:#000"
+     class="net_6"
+     id="circle3461" />
+  <line
+     x1="498"
+     x2="657"
+     y1="663"
+     y2="663"
+     class="net_6"
+     id="line3463" />
+  <line
+     x1="87.5"
+     x2="87.5"
+     y1="34"
+     y2="12"
+     class="net_6"
+     id="line3465" />
+  <line
+     x1="87.5"
+     x2="145"
+     y1="12"
+     y2="12"
+     class="net_6"
+     id="line3467" />
+  <line
+     x1="145"
+     x2="145"
+     y1="12"
+     y2="800"
+     class="net_6"
+     id="line3469" />
+  <circle
+     cx="145"
+     cy="800"
+     r="2"
+     style="fill:#000"
+     class="net_6"
+     id="circle3471" />
+  <line
+     x1="145"
+     x2="385"
+     y1="800"
+     y2="800"
+     class="net_6"
+     id="line3473" />
+  <line
+     x1="87.5"
+     x2="87.5"
+     y1="34"
+     y2="12"
+     class="net_6"
+     id="line3475" />
+  <line
+     x1="87.5"
+     x2="145"
+     y1="12"
+     y2="12"
+     class="net_6"
+     id="line3477" />
+  <line
+     x1="145"
+     x2="145"
+     y1="12"
+     y2="694"
+     class="net_6"
+     id="line3479" />
+  <line
+     x1="145"
+     x2="628"
+     y1="694"
+     y2="694"
+     class="net_6"
+     id="line3481" />
+  <line
+     x1="628"
+     x2="628"
+     y1="694"
+     y2="744"
+     class="net_6"
+     id="line3483" />
+  <line
+     x1="628"
+     x2="658.6666666666666"
+     y1="744"
+     y2="744"
+     class="net_6"
+     id="line3485" />
+  <line
+     x1="87.5"
+     x2="87.5"
+     y1="34"
+     y2="12"
+     class="net_6"
+     id="line3487" />
+  <line
+     x1="87.5"
+     x2="145"
+     y1="12"
+     y2="12"
+     class="net_6"
+     id="line3489" />
+  <line
+     x1="145"
+     x2="145"
+     y1="12"
+     y2="909.5"
+     class="net_6"
+     id="line3491" />
+  <line
+     x1="145"
+     x2="591"
+     y1="909.5"
+     y2="909.5"
+     class="net_6"
+     id="line3493" />
+  <line
+     x1="87.5"
+     x2="87.5"
+     y1="34"
+     y2="12"
+     class="net_6"
+     id="line3495" />
+  <line
+     x1="87.5"
+     x2="145"
+     y1="12"
+     y2="12"
+     class="net_6"
+     id="line3497" />
+  <line
+     x1="145"
+     x2="145"
+     y1="12"
+     y2="518"
+     class="net_6"
+     id="line3499" />
+  <circle
+     cx="145"
+     cy="518"
+     r="2"
+     style="fill:#000"
+     class="net_6"
+     id="circle3501" />
+  <line
+     x1="145"
+     x2="656"
+     y1="518"
+     y2="518"
+     class="net_6"
+     id="line3503" />
+  <line
+     x1="88"
+     x2="115"
+     y1="54.5"
+     y2="54.5"
+     class="net_3"
+     id="line3505" />
+  <line
+     x1="115"
+     x2="115"
+     y1="54.5"
+     y2="215"
+     class="net_3"
+     id="line3507" />
+  <circle
+     cx="115"
+     cy="215"
+     r="2"
+     style="fill:#000"
+     class="net_3"
+     id="circle3509" />
+  <line
+     x1="115"
+     x2="1604"
+     y1="215"
+     y2="215"
+     class="net_3"
+     id="line3511" />
+  <line
+     x1="88"
+     x2="115"
+     y1="54.5"
+     y2="54.5"
+     class="net_3"
+     id="line3513" />
+  <line
+     x1="115"
+     x2="115"
+     y1="54.5"
+     y2="939.5"
+     class="net_3"
+     id="line3515" />
+  <line
+     x1="115"
+     x2="1459"
+     y1="939.5"
+     y2="939.5"
+     class="net_3"
+     id="line3517" />
+  <line
+     x1="88"
+     x2="135"
+     y1="74.5"
+     y2="74.5"
+     class="net_7"
+     id="line3519" />
+  <line
+     x1="135"
+     x2="135"
+     y1="74.5"
+     y2="827"
+     class="net_7"
+     id="line3521" />
+  <line
+     x1="135"
+     x2="178"
+     y1="827"
+     y2="827"
+     class="net_7"
+     id="line3523" />
+  <line
+     x1="88"
+     x2="135"
+     y1="74.5"
+     y2="74.5"
+     class="net_7"
+     id="line3525" />
+  <line
+     x1="135"
+     x2="135"
+     y1="74.5"
+     y2="770"
+     class="net_7"
+     id="line3527" />
+  <circle
+     cx="135"
+     cy="770"
+     r="2"
+     style="fill:#000"
+     class="net_7"
+     id="circle3529" />
+  <line
+     x1="135"
+     x2="246"
+     y1="770"
+     y2="770"
+     class="net_7"
+     id="line3531" />
+  <line
+     x1="88"
+     x2="105"
+     y1="94.5"
+     y2="94.5"
+     class="net_9"
+     id="line3533" />
+  <line
+     x1="105"
+     x2="105"
+     y1="94.5"
+     y2="842"
+     class="net_9"
+     id="line3535" />
+  <circle
+     cx="105"
+     cy="842"
+     r="2"
+     style="fill:#000"
+     class="net_9"
+     id="circle3537" />
+  <line
+     x1="105"
+     x2="178"
+     y1="842"
+     y2="842"
+     class="net_9"
+     id="line3539" />
+  <line
+     x1="88"
+     x2="105"
+     y1="94.5"
+     y2="94.5"
+     class="net_9"
+     id="line3541" />
+  <line
+     x1="105"
+     x2="105"
+     y1="94.5"
+     y2="1106"
+     class="net_9"
+     id="line3543" />
+  <line
+     x1="105"
+     x2="1368.6666666666667"
+     y1="1106"
+     y2="1106"
+     class="net_9"
+     id="line3545" />
+  <line
+     x1="88"
+     x2="105"
+     y1="94.5"
+     y2="94.5"
+     class="net_9"
+     id="line3547" />
+  <line
+     x1="105"
+     x2="105"
+     y1="94.5"
+     y2="785"
+     class="net_9"
+     id="line3549" />
+  <circle
+     cx="105"
+     cy="785"
+     r="2"
+     style="fill:#000"
+     class="net_9"
+     id="circle3551" />
+  <line
+     x1="105"
+     x2="246"
+     y1="785"
+     y2="785"
+     class="net_9"
+     id="line3553" />
+  <line
+     x1="88"
+     x2="125"
+     y1="114.5"
+     y2="114.5"
+     class="net_8"
+     id="line3555" />
+  <line
+     x1="125"
+     x2="125"
+     y1="114.5"
+     y2="811"
+     class="net_8"
+     id="line3557" />
+  <line
+     x1="125"
+     x2="231"
+     y1="811"
+     y2="811"
+     class="net_8"
+     id="line3559" />
+  <line
+     x1="231"
+     x2="231"
+     y1="811"
+     y2="857"
+     class="net_8"
+     id="line3561" />
+  <line
+     x1="231"
+     x2="357"
+     y1="857"
+     y2="857"
+     class="net_8"
+     id="line3563" />
+  <line
+     x1="357"
+     x2="357"
+     y1="857"
+     y2="841"
+     class="net_8"
+     id="line3565" />
+  <line
+     x1="357"
+     x2="432"
+     y1="841"
+     y2="841"
+     class="net_8"
+     id="line3567" />
+  <line
+     x1="432"
+     x2="432"
+     y1="841"
+     y2="872"
+     class="net_8"
+     id="line3569" />
+  <circle
+     cx="125"
+     cy="811"
+     r="2"
+     style="fill:#000"
+     class="net_8"
+     id="circle3571" />
+  <circle
+     cx="231"
+     cy="857"
+     r="2"
+     style="fill:#000"
+     class="net_8"
+     id="circle3573" />
+  <circle
+     cx="357"
+     cy="857"
+     r="2"
+     style="fill:#000"
+     class="net_8"
+     id="circle3575" />
+  <line
+     x1="432"
+     x2="457"
+     y1="872"
+     y2="872"
+     class="net_8"
+     id="line3577" />
+  <line
+     x1="88"
+     x2="125"
+     y1="114.5"
+     y2="114.5"
+     class="net_8"
+     id="line3579" />
+  <line
+     x1="125"
+     x2="125"
+     y1="114.5"
+     y2="710"
+     class="net_8"
+     id="line3581" />
+  <circle
+     cx="125"
+     cy="710"
+     r="2"
+     style="fill:#000"
+     class="net_8"
+     id="circle3583" />
+  <line
+     x1="125"
+     x2="246"
+     y1="710"
+     y2="710"
+     class="net_8"
+     id="line3585" />
+  <line
+     x1="88"
+     x2="125"
+     y1="114.5"
+     y2="114.5"
+     class="net_8"
+     id="line3587" />
+  <line
+     x1="125"
+     x2="125"
+     y1="114.5"
+     y2="857"
+     class="net_8"
+     id="line3589" />
+  <line
+     x1="125"
+     x2="382"
+     y1="857"
+     y2="857"
+     class="net_8"
+     id="line3591" />
+  <line
+     x1="211"
+     x2="221"
+     y1="834.5"
+     y2="834.5"
+     class="net_21"
+     id="line3593" />
+  <line
+     x1="221"
+     x2="221"
+     y1="834.5"
+     y2="887"
+     class="net_21"
+     id="line3595" />
+  <circle
+     cx="221"
+     cy="834.5"
+     r="2"
+     style="fill:#000"
+     class="net_21"
+     id="circle3597" />
+  <line
+     x1="221"
+     x2="457"
+     y1="887"
+     y2="887"
+     class="net_21"
+     id="line3599" />
+  <line
+     x1="211"
+     x2="221"
+     y1="834.5"
+     y2="834.5"
+     class="net_21"
+     id="line3601" />
+  <line
+     x1="221"
+     x2="221"
+     y1="834.5"
+     y2="725"
+     class="net_21"
+     id="line3603" />
+  <line
+     x1="221"
+     x2="246"
+     y1="725"
+     y2="725"
+     class="net_21"
+     id="line3605" />
+  <line
+     x1="211"
+     x2="221"
+     y1="834.5"
+     y2="834.5"
+     class="net_21"
+     id="line3607" />
+  <line
+     x1="221"
+     x2="221"
+     y1="834.5"
+     y2="887"
+     class="net_21"
+     id="line3609" />
+  <line
+     x1="221"
+     x2="357"
+     y1="887"
+     y2="887"
+     class="net_21"
+     id="line3611" />
+  <line
+     x1="357"
+     x2="357"
+     y1="887"
+     y2="872"
+     class="net_21"
+     id="line3613" />
+  <circle
+     cx="357"
+     cy="887"
+     r="2"
+     style="fill:#000"
+     class="net_21"
+     id="circle3615" />
+  <line
+     x1="357"
+     x2="382"
+     y1="872"
+     y2="872"
+     class="net_21"
+     id="line3617" />
+  <line
+     x1="484"
+     x2="508"
+     y1="879.5"
+     y2="879.5"
+     class="net_22"
+     id="line3619" />
+  <line
+     x1="508"
+     x2="508"
+     y1="879.5"
+     y2="1121"
+     class="net_22"
+     id="line3621" />
+  <circle
+     cx="508"
+     cy="879.5"
+     r="2"
+     style="fill:#000"
+     class="net_22"
+     id="circle3623" />
+  <line
+     x1="508"
+     x2="1368.6666666666667"
+     y1="1121"
+     y2="1121"
+     class="net_22"
+     id="line3625" />
+  <line
+     x1="484"
+     x2="523"
+     y1="879.5"
+     y2="879.5"
+     class="net_22"
+     id="line3627" />
+  <line
+     x1="484"
+     x2="508"
+     y1="879.5"
+     y2="879.5"
+     class="net_22"
+     id="line3629" />
+  <line
+     x1="508"
+     x2="508"
+     y1="879.5"
+     y2="759"
+     class="net_22"
+     id="line3631" />
+  <circle
+     cx="508"
+     cy="759"
+     r="2"
+     style="fill:#000"
+     class="net_22"
+     id="circle3633" />
+  <line
+     x1="508"
+     x2="658.6666666666666"
+     y1="759"
+     y2="759"
+     class="net_22"
+     id="line3635" />
+  <line
+     x1="484"
+     x2="508"
+     y1="879.5"
+     y2="879.5"
+     class="net_22"
+     id="line3637" />
+  <line
+     x1="508"
+     x2="508"
+     y1="879.5"
+     y2="683"
+     class="net_22"
+     id="line3639" />
+  <line
+     x1="508"
+     x2="731"
+     y1="683"
+     y2="683"
+     class="net_22"
+     id="line3641" />
+  <line
+     x1="282"
+     x2="292"
+     y1="717.5"
+     y2="717.5"
+     class="net_24"
+     id="line3643" />
+  <line
+     x1="292"
+     x2="292"
+     y1="717.5"
+     y2="762.5"
+     class="net_24"
+     id="line3645" />
+  <line
+     x1="292"
+     x2="320"
+     y1="762.5"
+     y2="762.5"
+     class="net_24"
+     id="line3647" />
+  <line
+     x1="282"
+     x2="320"
+     y1="777.5"
+     y2="777.5"
+     class="net_25"
+     id="line3649" />
+  <line
+     x1="347"
+     x2="357"
+     y1="770"
+     y2="770"
+     class="net_26"
+     id="line3651" />
+  <line
+     x1="357"
+     x2="357"
+     y1="770"
+     y2="815"
+     class="net_26"
+     id="line3653" />
+  <circle
+     cx="357"
+     cy="770"
+     r="2"
+     style="fill:#000"
+     class="net_26"
+     id="circle3655" />
+  <line
+     x1="357"
+     x2="385"
+     y1="815"
+     y2="815"
+     class="net_26"
+     id="line3657" />
+  <line
+     x1="347"
+     x2="628"
+     y1="770"
+     y2="770"
+     class="net_26"
+     id="line3659" />
+  <line
+     x1="628"
+     x2="628"
+     y1="770"
+     y2="902"
+     class="net_26"
+     id="line3661" />
+  <line
+     x1="628"
+     x2="655"
+     y1="902"
+     y2="902"
+     class="net_26"
+     id="line3663" />
+  <line
+     x1="412"
+     x2="442"
+     y1="807.5"
+     y2="807.5"
+     class="net_27"
+     id="line3665" />
+  <line
+     x1="442"
+     x2="442"
+     y1="807.5"
+     y2="981.5"
+     class="net_27"
+     id="line3667" />
+  <circle
+     cx="442"
+     cy="807.5"
+     r="2"
+     style="fill:#000"
+     class="net_27"
+     id="circle3669" />
+  <line
+     x1="442"
+     x2="452"
+     y1="981.5"
+     y2="981.5"
+     class="net_27"
+     id="line3671" />
+  <line
+     x1="412"
+     x2="442"
+     y1="807.5"
+     y2="807.5"
+     class="net_27"
+     id="line3673" />
+  <line
+     x1="442"
+     x2="442"
+     y1="807.5"
+     y2="608"
+     class="net_27"
+     id="line3675" />
+  <line
+     x1="442"
+     x2="729"
+     y1="608"
+     y2="608"
+     class="net_27"
+     id="line3677" />
+  <line
+     x1="412"
+     x2="422"
+     y1="864.5"
+     y2="864.5"
+     class="net_28"
+     id="line3679" />
+  <line
+     x1="422"
+     x2="422"
+     y1="864.5"
+     y2="996.5"
+     class="net_28"
+     id="line3681" />
+  <circle
+     cx="422"
+     cy="864.5"
+     r="2"
+     style="fill:#000"
+     class="net_28"
+     id="circle3683" />
+  <line
+     x1="422"
+     x2="452"
+     y1="996.5"
+     y2="996.5"
+     class="net_28"
+     id="line3685" />
+  <line
+     x1="412"
+     x2="422"
+     y1="864.5"
+     y2="864.5"
+     class="net_28"
+     id="line3687" />
+  <line
+     x1="422"
+     x2="422"
+     y1="864.5"
+     y2="623"
+     class="net_28"
+     id="line3689" />
+  <line
+     x1="422"
+     x2="729"
+     y1="623"
+     y2="623"
+     class="net_28"
+     id="line3691" />
+  <line
+     x1="488"
+     x2="498"
+     y1="989"
+     y2="989"
+     class="net_29"
+     id="line3693" />
+  <line
+     x1="498"
+     x2="498"
+     y1="989"
+     y2="894.5"
+     class="net_29"
+     id="line3695" />
+  <circle
+     cx="498"
+     cy="989"
+     r="2"
+     style="fill:#000"
+     class="net_29"
+     id="circle3697" />
+  <line
+     x1="498"
+     x2="523"
+     y1="894.5"
+     y2="894.5"
+     class="net_29"
+     id="line3699" />
+  <line
+     x1="488"
+     x2="498"
+     y1="989"
+     y2="989"
+     class="net_29"
+     id="line3701" />
+  <line
+     x1="498"
+     x2="498"
+     y1="989"
+     y2="1272"
+     class="net_29"
+     id="line3703" />
+  <line
+     x1="498"
+     x2="1530"
+     y1="1272"
+     y2="1272"
+     class="net_29"
+     id="line3705" />
+  <line
+     x1="488"
+     x2="1604"
+     y1="989"
+     y2="989"
+     class="net_29"
+     id="line3707" />
+  <line
+     x1="1398.6666666666667"
+     x2="1414"
+     y1="1113.5"
+     y2="1113.5"
+     class="net_23"
+     id="line3709" />
+  <line
+     x1="1414"
+     x2="1414"
+     y1="1113.5"
+     y2="1233.5"
+     class="net_23"
+     id="line3711" />
+  <circle
+     cx="1414"
+     cy="1113.5"
+     r="2"
+     style="fill:#000"
+     class="net_23"
+     id="circle3713" />
+  <circle
+     cx="1414"
+     cy="1233.5"
+     r="2"
+     style="fill:#000"
+     class="net_23"
+     id="circle3715" />
+  <line
+     x1="1414"
+     x2="1457"
+     y1="1233.5"
+     y2="1233.5"
+     class="net_23"
+     id="line3717" />
+  <line
+     x1="1398.6666666666667"
+     x2="1456"
+     y1="1113.5"
+     y2="1113.5"
+     class="net_23"
+     id="line3719" />
+  <line
+     x1="1398.6666666666667"
+     x2="1414"
+     y1="1113.5"
+     y2="1113.5"
+     class="net_23"
+     id="line3721" />
+  <line
+     x1="1414"
+     x2="1414"
+     y1="1113.5"
+     y2="1049"
+     class="net_23"
+     id="line3723" />
+  <line
+     x1="1414"
+     x2="1606"
+     y1="1049"
+     y2="1049"
+     class="net_23"
+     id="line3725" />
+  <line
+     x1="1398.6666666666667"
+     x2="1414"
+     y1="1113.5"
+     y2="1113.5"
+     class="net_23"
+     id="line3727" />
+  <line
+     x1="1414"
+     x2="1414"
+     y1="1113.5"
+     y2="1348"
+     class="net_23"
+     id="line3729" />
+  <line
+     x1="1414"
+     x2="1745.6666666666667"
+     y1="1348"
+     y2="1348"
+     class="net_23"
+     id="line3731" />
+  <line
+     x1="553"
+     x2="563"
+     y1="887"
+     y2="887"
+     class="net_30"
+     id="line3733" />
+  <line
+     x1="563"
+     x2="563"
+     y1="887"
+     y2="1248.5"
+     class="net_30"
+     id="line3735" />
+  <circle
+     cx="563"
+     cy="887"
+     r="2"
+     style="fill:#000"
+     class="net_30"
+     id="circle3737" />
+  <line
+     x1="563"
+     x2="1457"
+     y1="1248.5"
+     y2="1248.5"
+     class="net_30"
+     id="line3739" />
+  <line
+     x1="553"
+     x2="563"
+     y1="887"
+     y2="887"
+     class="net_30"
+     id="line3741" />
+  <line
+     x1="563"
+     x2="563"
+     y1="887"
+     y2="924.5"
+     class="net_30"
+     id="line3743" />
+  <circle
+     cx="563"
+     cy="924.5"
+     r="2"
+     style="fill:#000"
+     class="net_30"
+     id="circle3745" />
+  <line
+     x1="563"
+     x2="591"
+     y1="924.5"
+     y2="924.5"
+     class="net_30"
+     id="line3747" />
+  <line
+     x1="553"
+     x2="563"
+     y1="887"
+     y2="887"
+     class="net_30"
+     id="line3749" />
+  <line
+     x1="563"
+     x2="563"
+     y1="887"
+     y2="533"
+     class="net_30"
+     id="line3751" />
+  <line
+     x1="563"
+     x2="656"
+     y1="533"
+     y2="533"
+     class="net_30"
+     id="line3753" />
+  <line
+     x1="618"
+     x2="655"
+     y1="917"
+     y2="917"
+     class="net_33"
+     id="line3755" />
+  <line
+     x1="685.6666666666666"
+     x2="701"
+     y1="751.5"
+     y2="751.5"
+     class="net_32"
+     id="line3757" />
+  <line
+     x1="701"
+     x2="701"
+     y1="751.5"
+     y2="894.5"
+     class="net_32"
+     id="line3759" />
+  <line
+     x1="701"
+     x2="726"
+     y1="894.5"
+     y2="894.5"
+     class="net_32"
+     id="line3761" />
+  <line
+     x1="691"
+     x2="726"
+     y1="909.5"
+     y2="909.5"
+     class="net_34"
+     id="line3763" />
+  <line
+     x1="88"
+     x2="165"
+     y1="134.5"
+     y2="134.5"
+     class="net_5"
+     id="line3765" />
+  <line
+     x1="165"
+     x2="165"
+     y1="134.5"
+     y2="502"
+     class="net_5"
+     id="line3767" />
+  <line
+     x1="165"
+     x2="924"
+     y1="502"
+     y2="502"
+     class="net_5"
+     id="line3769" />
+  <line
+     x1="924"
+     x2="924"
+     y1="502"
+     y2="510.5"
+     class="net_5"
+     id="line3771" />
+  <circle
+     cx="165"
+     cy="502"
+     r="2"
+     style="fill:#000"
+     class="net_5"
+     id="circle3773" />
+  <line
+     x1="924"
+     x2="942"
+     y1="510.5"
+     y2="510.5"
+     class="net_5"
+     id="line3775" />
+  <line
+     x1="88"
+     x2="165"
+     y1="134.5"
+     y2="134.5"
+     class="net_5"
+     id="line3777" />
+  <line
+     x1="165"
+     x2="165"
+     y1="134.5"
+     y2="548"
+     class="net_5"
+     id="line3779" />
+  <line
+     x1="165"
+     x2="731"
+     y1="548"
+     y2="548"
+     class="net_5"
+     id="line3781" />
+  <line
+     x1="88"
+     x2="165"
+     y1="134.5"
+     y2="134.5"
+     class="net_5"
+     id="line3783" />
+  <line
+     x1="165"
+     x2="165"
+     y1="134.5"
+     y2="502"
+     class="net_5"
+     id="line3785" />
+  <line
+     x1="165"
+     x2="772"
+     y1="502"
+     y2="502"
+     class="net_5"
+     id="line3787" />
+  <line
+     x1="772"
+     x2="772"
+     y1="502"
+     y2="408.5"
+     class="net_5"
+     id="line3789" />
+  <circle
+     cx="772"
+     cy="502"
+     r="2"
+     style="fill:#000"
+     class="net_5"
+     id="circle3791" />
+  <line
+     x1="772"
+     x2="944"
+     y1="408.5"
+     y2="408.5"
+     class="net_5"
+     id="line3793" />
+  <line
+     x1="88"
+     x2="165"
+     y1="134.5"
+     y2="134.5"
+     class="net_5"
+     id="line3795" />
+  <line
+     x1="165"
+     x2="165"
+     y1="134.5"
+     y2="351.5"
+     class="net_5"
+     id="line3797" />
+  <circle
+     cx="165"
+     cy="351.5"
+     r="2"
+     style="fill:#000"
+     class="net_5"
+     id="circle3799" />
+  <line
+     x1="165"
+     x2="1013"
+     y1="351.5"
+     y2="351.5"
+     class="net_5"
+     id="line3801" />
+  <line
+     x1="691"
+     x2="942"
+     y1="525.5"
+     y2="525.5"
+     class="net_36"
+     id="line3803" />
+  <line
+     x1="691"
+     x2="701"
+     y1="525.5"
+     y2="525.5"
+     class="net_36"
+     id="line3805" />
+  <line
+     x1="701"
+     x2="701"
+     y1="525.5"
+     y2="563"
+     class="net_36"
+     id="line3807" />
+  <circle
+     cx="701"
+     cy="525.5"
+     r="2"
+     style="fill:#000"
+     class="net_36"
+     id="circle3809" />
+  <line
+     x1="701"
+     x2="731"
+     y1="563"
+     y2="563"
+     class="net_36"
+     id="line3811" />
+  <line
+     x1="691"
+     x2="701"
+     y1="525.5"
+     y2="525.5"
+     class="net_36"
+     id="line3813" />
+  <line
+     x1="701"
+     x2="701"
+     y1="525.5"
+     y2="392.5"
+     class="net_36"
+     id="line3815" />
+  <line
+     x1="701"
+     x2="985"
+     y1="392.5"
+     y2="392.5"
+     class="net_36"
+     id="line3817" />
+  <line
+     x1="985"
+     x2="985"
+     y1="392.5"
+     y2="401"
+     class="net_36"
+     id="line3819" />
+  <line
+     x1="985"
+     x2="1012"
+     y1="401"
+     y2="401"
+     class="net_36"
+     id="line3821" />
+  <line
+     x1="762"
+     x2="772"
+     y1="902"
+     y2="902"
+     class="net_35"
+     id="line3823" />
+  <line
+     x1="772"
+     x2="772"
+     y1="902"
+     y2="864.5"
+     class="net_35"
+     id="line3825" />
+  <circle
+     cx="772"
+     cy="902"
+     r="2"
+     style="fill:#000"
+     class="net_35"
+     id="circle3827" />
+  <line
+     x1="772"
+     x2="797"
+     y1="864.5"
+     y2="864.5"
+     class="net_35"
+     id="line3829" />
+  <line
+     x1="762"
+     x2="1058"
+     y1="902"
+     y2="902"
+     class="net_35"
+     id="line3831" />
+  <line
+     x1="1058"
+     x2="1058"
+     y1="902"
+     y2="909.5"
+     class="net_35"
+     id="line3833" />
+  <line
+     x1="1058"
+     x2="1083"
+     y1="909.5"
+     y2="909.5"
+     class="net_35"
+     id="line3835" />
+  <line
+     x1="758"
+     x2="782"
+     y1="555.5"
+     y2="555.5"
+     class="net_38"
+     id="line3837" />
+  <line
+     x1="782"
+     x2="782"
+     y1="555.5"
+     y2="879.5"
+     class="net_38"
+     id="line3839" />
+  <circle
+     cx="782"
+     cy="555.5"
+     r="2"
+     style="fill:#000"
+     class="net_38"
+     id="circle3841" />
+  <line
+     x1="782"
+     x2="797"
+     y1="879.5"
+     y2="879.5"
+     class="net_38"
+     id="line3843" />
+  <line
+     x1="758"
+     x2="782"
+     y1="555.5"
+     y2="555.5"
+     class="net_38"
+     id="line3845" />
+  <line
+     x1="782"
+     x2="782"
+     y1="555.5"
+     y2="491"
+     class="net_38"
+     id="line3847" />
+  <line
+     x1="782"
+     x2="1058"
+     y1="491"
+     y2="491"
+     class="net_38"
+     id="line3849" />
+  <line
+     x1="1058"
+     x2="1058"
+     y1="491"
+     y2="653"
+     class="net_38"
+     id="line3851" />
+  <line
+     x1="1058"
+     x2="1083"
+     y1="653"
+     y2="653"
+     class="net_38"
+     id="line3853" />
+  <line
+     x1="682"
+     x2="701"
+     y1="663"
+     y2="663"
+     class="net_19"
+     id="line3855" />
+  <line
+     x1="701"
+     x2="701"
+     y1="663"
+     y2="668"
+     class="net_19"
+     id="line3857" />
+  <line
+     x1="701"
+     x2="731"
+     y1="668"
+     y2="668"
+     class="net_19"
+     id="line3859" />
+  <line
+     x1="762"
+     x2="772"
+     y1="615.5"
+     y2="615.5"
+     class="net_40"
+     id="line3861" />
+  <line
+     x1="772"
+     x2="772"
+     y1="615.5"
+     y2="660.5"
+     class="net_40"
+     id="line3863" />
+  <line
+     x1="772"
+     x2="797"
+     y1="660.5"
+     y2="660.5"
+     class="net_40"
+     id="line3865" />
+  <line
+     x1="758"
+     x2="797"
+     y1="675.5"
+     y2="675.5"
+     class="net_41"
+     id="line3867" />
+  <line
+     x1="833"
+     x2="868"
+     y1="872"
+     y2="872"
+     class="net_39"
+     id="line3869" />
+  <line
+     x1="833"
+     x2="843"
+     y1="668"
+     y2="668"
+     class="net_42"
+     id="line3871" />
+  <line
+     x1="843"
+     x2="843"
+     y1="668"
+     y2="887"
+     class="net_42"
+     id="line3873" />
+  <circle
+     cx="843"
+     cy="668"
+     r="2"
+     style="fill:#000"
+     class="net_42"
+     id="circle3875" />
+  <line
+     x1="843"
+     x2="868"
+     y1="887"
+     y2="887"
+     class="net_42"
+     id="line3877" />
+  <line
+     x1="833"
+     x2="843"
+     y1="668"
+     y2="668"
+     class="net_42"
+     id="line3879" />
+  <line
+     x1="843"
+     x2="843"
+     y1="668"
+     y2="476"
+     class="net_42"
+     id="line3881" />
+  <line
+     x1="843"
+     x2="1012"
+     y1="476"
+     y2="476"
+     class="net_42"
+     id="line3883" />
+  <line
+     x1="833"
+     x2="1083"
+     y1="668"
+     y2="668"
+     class="net_42"
+     id="line3885" />
+  <line
+     x1="904"
+     x2="914"
+     y1="879.5"
+     y2="879.5"
+     class="net_43"
+     id="line3887" />
+  <line
+     x1="914"
+     x2="914"
+     y1="879.5"
+     y2="423.5"
+     class="net_43"
+     id="line3889" />
+  <circle
+     cx="914"
+     cy="879.5"
+     r="2"
+     style="fill:#000"
+     class="net_43"
+     id="circle3891" />
+  <circle
+     cx="914"
+     cy="423.5"
+     r="2"
+     style="fill:#000"
+     class="net_43"
+     id="circle3893" />
+  <line
+     x1="914"
+     x2="944"
+     y1="423.5"
+     y2="423.5"
+     class="net_43"
+     id="line3895" />
+  <line
+     x1="904"
+     x2="914"
+     y1="879.5"
+     y2="879.5"
+     class="net_43"
+     id="line3897" />
+  <line
+     x1="914"
+     x2="914"
+     y1="879.5"
+     y2="366.5"
+     class="net_43"
+     id="line3899" />
+  <line
+     x1="914"
+     x2="1013"
+     y1="366.5"
+     y2="366.5"
+     class="net_43"
+     id="line3901" />
+  <line
+     x1="904"
+     x2="914"
+     y1="879.5"
+     y2="879.5"
+     class="net_43"
+     id="line3903" />
+  <line
+     x1="914"
+     x2="914"
+     y1="879.5"
+     y2="1090"
+     class="net_43"
+     id="line3905" />
+  <line
+     x1="914"
+     x2="1424"
+     y1="1090"
+     y2="1090"
+     class="net_43"
+     id="line3907" />
+  <line
+     x1="1424"
+     x2="1424"
+     y1="1090"
+     y2="1173.5"
+     class="net_43"
+     id="line3909" />
+  <line
+     x1="1424"
+     x2="1456"
+     y1="1173.5"
+     y2="1173.5"
+     class="net_43"
+     id="line3911" />
+  <line
+     x1="904"
+     x2="914"
+     y1="879.5"
+     y2="879.5"
+     class="net_43"
+     id="line3913" />
+  <line
+     x1="914"
+     x2="914"
+     y1="879.5"
+     y2="1090"
+     class="net_43"
+     id="line3915" />
+  <line
+     x1="914"
+     x2="1424"
+     y1="1090"
+     y2="1090"
+     class="net_43"
+     id="line3917" />
+  <line
+     x1="1424"
+     x2="1424"
+     y1="1090"
+     y2="1128.5"
+     class="net_43"
+     id="line3919" />
+  <circle
+     cx="1424"
+     cy="1128.5"
+     r="2"
+     style="fill:#000"
+     class="net_43"
+     id="circle3921" />
+  <line
+     x1="1424"
+     x2="1456"
+     y1="1128.5"
+     y2="1128.5"
+     class="net_43"
+     id="line3923" />
+  <line
+     x1="904"
+     x2="914"
+     y1="879.5"
+     y2="879.5"
+     class="net_43"
+     id="line3925" />
+  <line
+     x1="914"
+     x2="914"
+     y1="879.5"
+     y2="1090"
+     class="net_43"
+     id="line3927" />
+  <line
+     x1="914"
+     x2="1280"
+     y1="1090"
+     y2="1090"
+     class="net_43"
+     id="line3929" />
+  <line
+     x1="1280"
+     x2="1280"
+     y1="1090"
+     y2="1064"
+     class="net_43"
+     id="line3931" />
+  <circle
+     cx="1280"
+     cy="1090"
+     r="2"
+     style="fill:#000"
+     class="net_43"
+     id="circle3933" />
+  <line
+     x1="1280"
+     x2="1606"
+     y1="1064"
+     y2="1064"
+     class="net_43"
+     id="line3935" />
+  <line
+     x1="971"
+     x2="1012"
+     y1="416"
+     y2="416"
+     class="net_44"
+     id="line3937" />
+  <line
+     x1="975"
+     x2="985"
+     y1="518"
+     y2="518"
+     class="net_37"
+     id="line3939" />
+  <line
+     x1="985"
+     x2="985"
+     y1="518"
+     y2="461"
+     class="net_37"
+     id="line3941" />
+  <circle
+     cx="985"
+     cy="518"
+     r="2"
+     style="fill:#000"
+     class="net_37"
+     id="circle3943" />
+  <line
+     x1="985"
+     x2="1012"
+     y1="461"
+     y2="461"
+     class="net_37"
+     id="line3945" />
+  <line
+     x1="975"
+     x2="985"
+     y1="518"
+     y2="518"
+     class="net_37"
+     id="line3947" />
+  <line
+     x1="985"
+     x2="985"
+     y1="518"
+     y2="924.5"
+     class="net_37"
+     id="line3949" />
+  <line
+     x1="985"
+     x2="1083"
+     y1="924.5"
+     y2="924.5"
+     class="net_37"
+     id="line3951" />
+  <line
+     x1="1048"
+     x2="1058"
+     y1="408.5"
+     y2="408.5"
+     class="net_45"
+     id="line3953" />
+  <line
+     x1="1058"
+     x2="1058"
+     y1="408.5"
+     y2="453.5"
+     class="net_45"
+     id="line3955" />
+  <line
+     x1="1058"
+     x2="1083"
+     y1="453.5"
+     y2="453.5"
+     class="net_45"
+     id="line3957" />
+  <line
+     x1="1048"
+     x2="1083"
+     y1="468.5"
+     y2="468.5"
+     class="net_46"
+     id="line3959" />
+  <line
+     x1="88"
+     x2="155"
+     y1="154.5"
+     y2="154.5"
+     class="net_4"
+     id="line3961" />
+  <line
+     x1="155"
+     x2="155"
+     y1="154.5"
+     y2="381.5"
+     class="net_4"
+     id="line3963" />
+  <line
+     x1="155"
+     x2="1088"
+     y1="381.5"
+     y2="381.5"
+     class="net_4"
+     id="line3965" />
+  <line
+     x1="88"
+     x2="155"
+     y1="154.5"
+     y2="154.5"
+     class="net_4"
+     id="line3967" />
+  <line
+     x1="155"
+     x2="155"
+     y1="154.5"
+     y2="335.5"
+     class="net_4"
+     id="line3969" />
+  <line
+     x1="155"
+     x2="1129"
+     y1="335.5"
+     y2="335.5"
+     class="net_4"
+     id="line3971" />
+  <line
+     x1="1129"
+     x2="1129"
+     y1="335.5"
+     y2="242"
+     class="net_4"
+     id="line3973" />
+  <circle
+     cx="155"
+     cy="335.5"
+     r="2"
+     style="fill:#000"
+     class="net_4"
+     id="circle3975" />
+  <circle
+     cx="1129"
+     cy="335.5"
+     r="2"
+     style="fill:#000"
+     class="net_4"
+     id="circle3977" />
+  <line
+     x1="1129"
+     x2="1300"
+     y1="242"
+     y2="242"
+     class="net_4"
+     id="line3979" />
+  <line
+     x1="88"
+     x2="155"
+     y1="154.5"
+     y2="154.5"
+     class="net_4"
+     id="line3981" />
+  <line
+     x1="155"
+     x2="155"
+     y1="154.5"
+     y2="335.5"
+     class="net_4"
+     id="line3983" />
+  <line
+     x1="155"
+     x2="1341"
+     y1="335.5"
+     y2="335.5"
+     class="net_4"
+     id="line3985" />
+  <line
+     x1="1341"
+     x2="1341"
+     y1="335.5"
+     y2="352"
+     class="net_4"
+     id="line3987" />
+  <line
+     x1="1341"
+     x2="1369"
+     y1="352"
+     y2="352"
+     class="net_4"
+     id="line3989" />
+  <line
+     x1="1048"
+     x2="1058"
+     y1="359"
+     y2="359"
+     class="net_48"
+     id="line3991" />
+  <line
+     x1="1058"
+     x2="1058"
+     y1="359"
+     y2="396.5"
+     class="net_48"
+     id="line3993" />
+  <circle
+     cx="1058"
+     cy="359"
+     r="2"
+     style="fill:#000"
+     class="net_48"
+     id="circle3995" />
+  <line
+     x1="1058"
+     x2="1088"
+     y1="396.5"
+     y2="396.5"
+     class="net_48"
+     id="line3997" />
+  <line
+     x1="1048"
+     x2="1058"
+     y1="359"
+     y2="359"
+     class="net_48"
+     id="line3999" />
+  <line
+     x1="1058"
+     x2="1058"
+     y1="359"
+     y2="226"
+     class="net_48"
+     id="line4001" />
+  <line
+     x1="1058"
+     x2="1341"
+     y1="226"
+     y2="226"
+     class="net_48"
+     id="line4003" />
+  <line
+     x1="1341"
+     x2="1341"
+     y1="226"
+     y2="234.5"
+     class="net_48"
+     id="line4005" />
+  <line
+     x1="1341"
+     x2="1368"
+     y1="234.5"
+     y2="234.5"
+     class="net_48"
+     id="line4007" />
+  <line
+     x1="1119"
+     x2="1159"
+     y1="461"
+     y2="461"
+     class="net_47"
+     id="line4009" />
+  <line
+     x1="1119"
+     x2="1149"
+     y1="461"
+     y2="461"
+     class="net_47"
+     id="line4011" />
+  <line
+     x1="1149"
+     x2="1149"
+     y1="461"
+     y2="378"
+     class="net_47"
+     id="line4013" />
+  <line
+     x1="1149"
+     x2="1341"
+     y1="378"
+     y2="378"
+     class="net_47"
+     id="line4015" />
+  <line
+     x1="1341"
+     x2="1341"
+     y1="378"
+     y2="887"
+     class="net_47"
+     id="line4017" />
+  <circle
+     cx="1149"
+     cy="461"
+     r="2"
+     style="fill:#000"
+     class="net_47"
+     id="circle4019" />
+  <line
+     x1="1341"
+     x2="1371.6666666666667"
+     y1="887"
+     y2="887"
+     class="net_47"
+     id="line4021" />
+  <line
+     x1="1115"
+     x2="1139"
+     y1="389"
+     y2="389"
+     class="net_49"
+     id="line4023" />
+  <line
+     x1="1139"
+     x2="1139"
+     y1="389"
+     y2="476"
+     class="net_49"
+     id="line4025" />
+  <circle
+     cx="1139"
+     cy="389"
+     r="2"
+     style="fill:#000"
+     class="net_49"
+     id="circle4027" />
+  <line
+     x1="1139"
+     x2="1159"
+     y1="476"
+     y2="476"
+     class="net_49"
+     id="line4029" />
+  <line
+     x1="1115"
+     x2="1139"
+     y1="389"
+     y2="389"
+     class="net_49"
+     id="line4031" />
+  <line
+     x1="1139"
+     x2="1139"
+     y1="389"
+     y2="294.5"
+     class="net_49"
+     id="line4033" />
+  <line
+     x1="1139"
+     x2="1371.6666666666667"
+     y1="294.5"
+     y2="294.5"
+     class="net_49"
+     id="line4035" />
+  <line
+     x1="1115"
+     x2="1280"
+     y1="389"
+     y2="389"
+     class="net_49"
+     id="line4037" />
+  <line
+     x1="1280"
+     x2="1280"
+     y1="389"
+     y2="894.5"
+     class="net_49"
+     id="line4039" />
+  <line
+     x1="1280"
+     x2="1295"
+     y1="894.5"
+     y2="894.5"
+     class="net_49"
+     id="line4041" />
+  <line
+     x1="1119"
+     x2="1129"
+     y1="660.5"
+     y2="660.5"
+     class="net_51"
+     id="line4043" />
+  <line
+     x1="1129"
+     x2="1129"
+     y1="660.5"
+     y2="902"
+     class="net_51"
+     id="line4045" />
+  <line
+     x1="1129"
+     x2="1161"
+     y1="902"
+     y2="902"
+     class="net_51"
+     id="line4047" />
+  <line
+     x1="1119"
+     x2="1161"
+     y1="917"
+     y2="917"
+     class="net_52"
+     id="line4049" />
+  <line
+     x1="1195"
+     x2="1215"
+     y1="468.5"
+     y2="468.5"
+     class="net_50"
+     id="line4051" />
+  <line
+     x1="1215"
+     x2="1215"
+     y1="468.5"
+     y2="1060"
+     class="net_50"
+     id="line4053" />
+  <circle
+     cx="1215"
+     cy="468.5"
+     r="2"
+     style="fill:#000"
+     class="net_50"
+     id="circle4055" />
+  <line
+     x1="1215"
+     x2="1230"
+     y1="1060"
+     y2="1060"
+     class="net_50"
+     id="line4057" />
+  <line
+     x1="1195"
+     x2="1215"
+     y1="468.5"
+     y2="468.5"
+     class="net_50"
+     id="line4059" />
+  <line
+     x1="1215"
+     x2="1215"
+     y1="468.5"
+     y2="324.5"
+     class="net_50"
+     id="line4061" />
+  <line
+     x1="1215"
+     x2="1424"
+     y1="324.5"
+     y2="324.5"
+     class="net_50"
+     id="line4063" />
+  <line
+     x1="1424"
+     x2="1424"
+     y1="324.5"
+     y2="879.5"
+     class="net_50"
+     id="line4065" />
+  <line
+     x1="1424"
+     x2="1454"
+     y1="879.5"
+     y2="879.5"
+     class="net_50"
+     id="line4067" />
+  <line
+     x1="1191"
+     x2="1205"
+     y1="909.5"
+     y2="909.5"
+     class="net_53"
+     id="line4069" />
+  <line
+     x1="1205"
+     x2="1205"
+     y1="909.5"
+     y2="1075"
+     class="net_53"
+     id="line4071" />
+  <circle
+     cx="1205"
+     cy="909.5"
+     r="2"
+     style="fill:#000"
+     class="net_53"
+     id="circle4073" />
+  <line
+     x1="1205"
+     x2="1230"
+     y1="1075"
+     y2="1075"
+     class="net_53"
+     id="line4075" />
+  <line
+     x1="1191"
+     x2="1205"
+     y1="909.5"
+     y2="909.5"
+     class="net_53"
+     id="line4077" />
+  <line
+     x1="1205"
+     x2="1205"
+     y1="909.5"
+     y2="309.5"
+     class="net_53"
+     id="line4079" />
+  <line
+     x1="1205"
+     x2="1371.6666666666667"
+     y1="309.5"
+     y2="309.5"
+     class="net_53"
+     id="line4081" />
+  <line
+     x1="1191"
+     x2="1295"
+     y1="909.5"
+     y2="909.5"
+     class="net_53"
+     id="line4083" />
+  <line
+     x1="1260"
+     x2="1270"
+     y1="1067.5"
+     y2="1067.5"
+     class="net_54"
+     id="line4085" />
+  <line
+     x1="1270"
+     x2="1270"
+     y1="1067.5"
+     y2="1188.5"
+     class="net_54"
+     id="line4087" />
+  <circle
+     cx="1270"
+     cy="1067.5"
+     r="2"
+     style="fill:#000"
+     class="net_54"
+     id="circle4089" />
+  <circle
+     cx="1270"
+     cy="1188.5"
+     r="2"
+     style="fill:#000"
+     class="net_54"
+     id="circle4091" />
+  <line
+     x1="1270"
+     x2="1456"
+     y1="1188.5"
+     y2="1188.5"
+     class="net_54"
+     id="line4093" />
+  <line
+     x1="1260"
+     x2="1270"
+     y1="1067.5"
+     y2="1067.5"
+     class="net_54"
+     id="line4095" />
+  <line
+     x1="1270"
+     x2="1270"
+     y1="1067.5"
+     y2="1302"
+     class="net_54"
+     id="line4097" />
+  <line
+     x1="1270"
+     x2="1677"
+     y1="1302"
+     y2="1302"
+     class="net_54"
+     id="line4099" />
+  <line
+     x1="1260"
+     x2="1270"
+     y1="1067.5"
+     y2="1067.5"
+     class="net_54"
+     id="line4101" />
+  <line
+     x1="1270"
+     x2="1270"
+     y1="1067.5"
+     y2="1079"
+     class="net_54"
+     id="line4103" />
+  <line
+     x1="1270"
+     x2="1657"
+     y1="1079"
+     y2="1079"
+     class="net_54"
+     id="line4105" />
+  <line
+     x1="1657"
+     x2="1657"
+     y1="1079"
+     y2="1166"
+     class="net_54"
+     id="line4107" />
+  <circle
+     cx="1270"
+     cy="1079"
+     r="2"
+     style="fill:#000"
+     class="net_54"
+     id="circle4109" />
+  <line
+     x1="1657"
+     x2="1674"
+     y1="1166"
+     y2="1166"
+     class="net_54"
+     id="line4111" />
+  <line
+     x1="1260"
+     x2="1270"
+     y1="1067.5"
+     y2="1067.5"
+     class="net_54"
+     id="line4113" />
+  <line
+     x1="1270"
+     x2="1270"
+     y1="1067.5"
+     y2="973"
+     class="net_54"
+     id="line4115" />
+  <line
+     x1="1270"
+     x2="1718"
+     y1="973"
+     y2="973"
+     class="net_54"
+     id="line4117" />
+  <line
+     x1="1718"
+     x2="1718"
+     y1="973"
+     y2="1010.5"
+     class="net_54"
+     id="line4119" />
+  <circle
+     cx="1270"
+     cy="973"
+     r="2"
+     style="fill:#000"
+     class="net_54"
+     id="circle4121" />
+  <line
+     x1="1718"
+     x2="1746"
+     y1="1010.5"
+     y2="1010.5"
+     class="net_54"
+     id="line4123" />
+  <line
+     x1="1260"
+     x2="1270"
+     y1="1067.5"
+     y2="1067.5"
+     class="net_54"
+     id="line4125" />
+  <line
+     x1="1270"
+     x2="1270"
+     y1="1067.5"
+     y2="257"
+     class="net_54"
+     id="line4127" />
+  <line
+     x1="1270"
+     x2="1300"
+     y1="257"
+     y2="257"
+     class="net_54"
+     id="line4129" />
+  <line
+     x1="1260"
+     x2="1270"
+     y1="1067.5"
+     y2="1067.5"
+     class="net_54"
+     id="line4131" />
+  <line
+     x1="1270"
+     x2="1270"
+     y1="1067.5"
+     y2="367"
+     class="net_54"
+     id="line4133" />
+  <circle
+     cx="1270"
+     cy="367"
+     r="2"
+     style="fill:#000"
+     class="net_54"
+     id="circle4135" />
+  <line
+     x1="1270"
+     x2="1369"
+     y1="367"
+     y2="367"
+     class="net_54"
+     id="line4137" />
+  <line
+     x1="1490"
+     x2="1672"
+     y1="1241"
+     y2="1241"
+     class="net_31"
+     id="line4139" />
+  <line
+     x1="1490"
+     x2="1520"
+     y1="1241"
+     y2="1241"
+     class="net_31"
+     id="line4141" />
+  <line
+     x1="1520"
+     x2="1520"
+     y1="1241"
+     y2="1196"
+     class="net_31"
+     id="line4143" />
+  <circle
+     cx="1520"
+     cy="1241"
+     r="2"
+     style="fill:#000"
+     class="net_31"
+     id="circle4145" />
+  <line
+     x1="1520"
+     x2="1533"
+     y1="1196"
+     y2="1196"
+     class="net_31"
+     id="line4147" />
+  <line
+     x1="1486"
+     x2="1510"
+     y1="1181"
+     y2="1181"
+     class="net_55"
+     id="line4149" />
+  <line
+     x1="1510"
+     x2="1510"
+     y1="1181"
+     y2="1256"
+     class="net_55"
+     id="line4151" />
+  <circle
+     cx="1510"
+     cy="1181"
+     r="2"
+     style="fill:#000"
+     class="net_55"
+     id="circle4153" />
+  <line
+     x1="1510"
+     x2="1672"
+     y1="1256"
+     y2="1256"
+     class="net_55"
+     id="line4155" />
+  <line
+     x1="1486"
+     x2="1533"
+     y1="1181"
+     y2="1181"
+     class="net_55"
+     id="line4157" />
+  <line
+     x1="1486"
+     x2="1500"
+     y1="1121"
+     y2="1121"
+     class="net_57"
+     id="line4159" />
+  <line
+     x1="1500"
+     x2="1500"
+     y1="1121"
+     y2="1287"
+     class="net_57"
+     id="line4161" />
+  <circle
+     cx="1500"
+     cy="1121"
+     r="2"
+     style="fill:#000"
+     class="net_57"
+     id="circle4163" />
+  <line
+     x1="1500"
+     x2="1530"
+     y1="1287"
+     y2="1287"
+     class="net_57"
+     id="line4165" />
+  <line
+     x1="1486"
+     x2="1500"
+     y1="1121"
+     y2="1121"
+     class="net_57"
+     id="line4167" />
+  <line
+     x1="1500"
+     x2="1500"
+     y1="1121"
+     y2="1004"
+     class="net_57"
+     id="line4169" />
+  <line
+     x1="1500"
+     x2="1604"
+     y1="1004"
+     y2="1004"
+     class="net_57"
+     id="line4171" />
+  <line
+     x1="1566"
+     x2="1576"
+     y1="1279.5"
+     y2="1279.5"
+     class="net_58"
+     id="line4173" />
+  <line
+     x1="1576"
+     x2="1576"
+     y1="1279.5"
+     y2="1317"
+     class="net_58"
+     id="line4175" />
+  <circle
+     cx="1576"
+     cy="1279.5"
+     r="2"
+     style="fill:#000"
+     class="net_58"
+     id="circle4177" />
+  <circle
+     cx="1576"
+     cy="1317"
+     r="2"
+     style="fill:#000"
+     class="net_58"
+     id="circle4179" />
+  <line
+     x1="1576"
+     x2="1677"
+     y1="1317"
+     y2="1317"
+     class="net_58"
+     id="line4181" />
+  <line
+     x1="1566"
+     x2="1576"
+     y1="1279.5"
+     y2="1279.5"
+     class="net_58"
+     id="line4183" />
+  <line
+     x1="1576"
+     x2="1576"
+     y1="1279.5"
+     y2="1173.5"
+     class="net_58"
+     id="line4185" />
+  <line
+     x1="1576"
+     x2="1601"
+     y1="1173.5"
+     y2="1173.5"
+     class="net_58"
+     id="line4187" />
+  <line
+     x1="1566"
+     x2="1576"
+     y1="1279.5"
+     y2="1279.5"
+     class="net_58"
+     id="line4189" />
+  <line
+     x1="1576"
+     x2="1576"
+     y1="1279.5"
+     y2="1363"
+     class="net_58"
+     id="line4191" />
+  <line
+     x1="1576"
+     x2="1745.6666666666667"
+     y1="1363"
+     y2="1363"
+     class="net_58"
+     id="line4193" />
+  <line
+     x1="1708"
+     x2="1718"
+     y1="1248.5"
+     y2="1248.5"
+     class="net_56"
+     id="line4195" />
+  <line
+     x1="1718"
+     x2="1718"
+     y1="1248.5"
+     y2="1294.5"
+     class="net_56"
+     id="line4197" />
+  <line
+     x1="1718"
+     x2="1745"
+     y1="1294.5"
+     y2="1294.5"
+     class="net_56"
+     id="line4199" />
+  <line
+     x1="1704"
+     x2="1745"
+     y1="1309.5"
+     y2="1309.5"
+     class="net_59"
+     id="line4201" />
+  <line
+     x1="1566"
+     x2="1601"
+     y1="1188.5"
+     y2="1188.5"
+     class="net_60"
+     id="line4203" />
+  <line
+     x1="1637"
+     x2="1657"
+     y1="996.5"
+     y2="996.5"
+     class="net_61"
+     id="line4205" />
+  <line
+     x1="1657"
+     x2="1657"
+     y1="996.5"
+     y2="1041.5"
+     class="net_61"
+     id="line4207" />
+  <line
+     x1="1657"
+     x2="1674"
+     y1="1041.5"
+     y2="1041.5"
+     class="net_61"
+     id="line4209" />
+  <line
+     x1="1633"
+     x2="1674"
+     y1="1056.5"
+     y2="1056.5"
+     class="net_62"
+     id="line4211" />
+  <line
+     x1="1637"
+     x2="1674"
+     y1="1181"
+     y2="1181"
+     class="net_17"
+     id="line4213" />
+  <line
+     x1="1637"
+     x2="1647"
+     y1="1181"
+     y2="1181"
+     class="net_17"
+     id="line4215" />
+  <line
+     x1="1647"
+     x2="1647"
+     y1="1181"
+     y2="1025.5"
+     class="net_17"
+     id="line4217" />
+  <circle
+     cx="1647"
+     cy="1181"
+     r="2"
+     style="fill:#000"
+     class="net_17"
+     id="circle4219" />
+  <line
+     x1="1647"
+     x2="1746"
+     y1="1025.5"
+     y2="1025.5"
+     class="net_17"
+     id="line4221" />
+  <line
+     x1="1637"
+     x2="1647"
+     y1="1181"
+     y2="1181"
+     class="net_17"
+     id="line4223" />
+  <line
+     x1="1647"
+     x2="1647"
+     y1="1181"
+     y2="1332"
+     class="net_17"
+     id="line4225" />
+  <line
+     x1="1647"
+     x2="1791"
+     y1="1332"
+     y2="1332"
+     class="net_17"
+     id="line4227" />
+  <line
+     x1="1791"
+     x2="1791"
+     y1="1332"
+     y2="1335.5"
+     class="net_17"
+     id="line4229" />
+  <line
+     x1="1791"
+     x2="1851"
+     y1="1335.5"
+     y2="1335.5"
+     class="net_17"
+     id="line4231" />
+  <line
+     x1="1704"
+     x2="1718"
+     y1="1049"
+     y2="1049"
+     class="net_63"
+     id="line4233" />
+  <line
+     x1="1718"
+     x2="1718"
+     y1="1049"
+     y2="1158.5"
+     class="net_63"
+     id="line4235" />
+  <line
+     x1="1718"
+     x2="1746"
+     y1="1158.5"
+     y2="1158.5"
+     class="net_63"
+     id="line4237" />
+  <line
+     x1="1704"
+     x2="1746"
+     y1="1173.5"
+     y2="1173.5"
+     class="net_64"
+     id="line4239" />
+  <line
+     x1="1404"
+     x2="1414"
+     y1="359.5"
+     y2="359.5"
+     class="net_66"
+     id="line4241" />
+  <line
+     x1="1414"
+     x2="1414"
+     y1="359.5"
+     y2="954.5"
+     class="net_66"
+     id="line4243" />
+  <circle
+     cx="1414"
+     cy="359.5"
+     r="2"
+     style="fill:#000"
+     class="net_66"
+     id="circle4245" />
+  <line
+     x1="1414"
+     x2="1459"
+     y1="954.5"
+     y2="954.5"
+     class="net_66"
+     id="line4247" />
+  <line
+     x1="1404"
+     x2="1746"
+     y1="359.5"
+     y2="359.5"
+     class="net_66"
+     id="line4249" />
+  <line
+     x1="1327"
+     x2="1368"
+     y1="249.5"
+     y2="249.5"
+     class="net_65"
+     id="line4251" />
+  <line
+     x1="1404"
+     x2="1444"
+     y1="242"
+     y2="242"
+     class="net_68"
+     id="line4253" />
+  <line
+     x1="1444"
+     x2="1444"
+     y1="242"
+     y2="819.5"
+     class="net_68"
+     id="line4255" />
+  <line
+     x1="1444"
+     x2="1456"
+     y1="819.5"
+     y2="819.5"
+     class="net_68"
+     id="line4257" />
+  <line
+     x1="1398.6666666666667"
+     x2="1434"
+     y1="302"
+     y2="302"
+     class="net_69"
+     id="line4259" />
+  <line
+     x1="1434"
+     x2="1434"
+     y1="302"
+     y2="834.5"
+     class="net_69"
+     id="line4261" />
+  <line
+     x1="1434"
+     x2="1456"
+     y1="834.5"
+     y2="834.5"
+     class="net_69"
+     id="line4263" />
+  <line
+     x1="1486"
+     x2="1520"
+     y1="947"
+     y2="947"
+     class="net_67"
+     id="line4265" />
+  <line
+     x1="1520"
+     x2="1520"
+     y1="947"
+     y2="812"
+     class="net_67"
+     id="line4267" />
+  <circle
+     cx="1520"
+     cy="947"
+     r="2"
+     style="fill:#000"
+     class="net_67"
+     id="circle4269" />
+  <line
+     x1="1520"
+     x2="1535"
+     y1="812"
+     y2="812"
+     class="net_67"
+     id="line4271" />
+  <line
+     x1="1486"
+     x2="1675"
+     y1="947"
+     y2="947"
+     class="net_67"
+     id="line4273" />
+  <line
+     x1="1486"
+     x2="1535"
+     y1="827"
+     y2="827"
+     class="net_70"
+     id="line4275" />
+  <line
+     x1="1486"
+     x2="1500"
+     y1="827"
+     y2="827"
+     class="net_70"
+     id="line4277" />
+  <line
+     x1="1500"
+     x2="1500"
+     y1="827"
+     y2="752"
+     class="net_70"
+     id="line4279" />
+  <circle
+     cx="1500"
+     cy="827"
+     r="2"
+     style="fill:#000"
+     class="net_70"
+     id="circle4281" />
+  <line
+     x1="1500"
+     x2="1530"
+     y1="752"
+     y2="752"
+     class="net_70"
+     id="line4283" />
+  <line
+     x1="1331"
+     x2="1371.6666666666667"
+     y1="902"
+     y2="902"
+     class="net_72"
+     id="line4285" />
+  <line
+     x1="1398.6666666666667"
+     x2="1454"
+     y1="894.5"
+     y2="894.5"
+     class="net_73"
+     id="line4287" />
+  <line
+     x1="1490"
+     x2="1647"
+     y1="887"
+     y2="887"
+     class="net_74"
+     id="line4289" />
+  <line
+     x1="1647"
+     x2="1647"
+     y1="887"
+     y2="932"
+     class="net_74"
+     id="line4291" />
+  <line
+     x1="1647"
+     x2="1675"
+     y1="932"
+     y2="932"
+     class="net_74"
+     id="line4293" />
+  <line
+     x1="1490"
+     x2="1510"
+     y1="887"
+     y2="887"
+     class="net_74"
+     id="line4295" />
+  <line
+     x1="1510"
+     x2="1510"
+     y1="887"
+     y2="767"
+     class="net_74"
+     id="line4297" />
+  <circle
+     cx="1510"
+     cy="887"
+     r="2"
+     style="fill:#000"
+     class="net_74"
+     id="circle4299" />
+  <line
+     x1="1510"
+     x2="1530"
+     y1="767"
+     y2="767"
+     class="net_74"
+     id="line4301" />
+  <line
+     x1="1562"
+     x2="1586"
+     y1="819.5"
+     y2="819.5"
+     class="net_71"
+     id="line4303" />
+  <line
+     x1="1586"
+     x2="1586"
+     y1="819.5"
+     y2="803.5"
+     class="net_71"
+     id="line4305" />
+  <line
+     x1="1586"
+     x2="1718"
+     y1="803.5"
+     y2="803.5"
+     class="net_71"
+     id="line4307" />
+  <line
+     x1="1718"
+     x2="1718"
+     y1="803.5"
+     y2="924.5"
+     class="net_71"
+     id="line4309" />
+  <circle
+     cx="1586"
+     cy="819.5"
+     r="2"
+     style="fill:#000"
+     class="net_71"
+     id="circle4311" />
+  <line
+     x1="1718"
+     x2="1745"
+     y1="924.5"
+     y2="924.5"
+     class="net_71"
+     id="line4313" />
+  <line
+     x1="1562"
+     x2="1603"
+     y1="819.5"
+     y2="819.5"
+     class="net_71"
+     id="line4315" />
+  <line
+     x1="1708"
+     x2="1745"
+     y1="939.5"
+     y2="939.5"
+     class="net_75"
+     id="line4317" />
+  <line
+     x1="1566"
+     x2="1576"
+     y1="759.5"
+     y2="759.5"
+     class="net_76"
+     id="line4319" />
+  <line
+     x1="1576"
+     x2="1576"
+     y1="759.5"
+     y2="834.5"
+     class="net_76"
+     id="line4321" />
+  <circle
+     cx="1576"
+     cy="759.5"
+     r="2"
+     style="fill:#000"
+     class="net_76"
+     id="circle4323" />
+  <line
+     x1="1576"
+     x2="1603"
+     y1="834.5"
+     y2="834.5"
+     class="net_76"
+     id="line4325" />
+  <line
+     x1="1566"
+     x2="1576"
+     y1="759.5"
+     y2="759.5"
+     class="net_76"
+     id="line4327" />
+  <line
+     x1="1576"
+     x2="1576"
+     y1="759.5"
+     y2="247"
+     class="net_76"
+     id="line4329" />
+  <line
+     x1="1576"
+     x2="1677"
+     y1="247"
+     y2="247"
+     class="net_76"
+     id="line4331" />
+  <line
+     x1="1629"
+     x2="1647"
+     y1="215"
+     y2="215"
+     class="net_20"
+     id="line4333" />
+  <line
+     x1="1647"
+     x2="1647"
+     y1="215"
+     y2="292"
+     class="net_20"
+     id="line4335" />
+  <line
+     x1="1647"
+     x2="1672"
+     y1="292"
+     y2="292"
+     class="net_20"
+     id="line4337" />
+  <line
+     x1="1629"
+     x2="1647"
+     y1="215"
+     y2="215"
+     class="net_20"
+     id="line4339" />
+  <line
+     x1="1647"
+     x2="1647"
+     y1="215"
+     y2="232"
+     class="net_20"
+     id="line4341" />
+  <circle
+     cx="1647"
+     cy="232"
+     r="2"
+     style="fill:#000"
+     class="net_20"
+     id="circle4343" />
+  <line
+     x1="1647"
+     x2="1677"
+     y1="232"
+     y2="232"
+     class="net_20"
+     id="line4345" />
+  <line
+     x1="1633"
+     x2="1657"
+     y1="827"
+     y2="827"
+     class="net_13"
+     id="line4347" />
+  <line
+     x1="1657"
+     x2="1657"
+     y1="827"
+     y2="307"
+     class="net_13"
+     id="line4349" />
+  <circle
+     cx="1657"
+     cy="827"
+     r="2"
+     style="fill:#000"
+     class="net_13"
+     id="circle4351" />
+  <line
+     x1="1657"
+     x2="1672"
+     y1="307"
+     y2="307"
+     class="net_13"
+     id="line4353" />
+  <line
+     x1="1633"
+     x2="1657"
+     y1="827"
+     y2="827"
+     class="net_13"
+     id="line4355" />
+  <line
+     x1="1657"
+     x2="1657"
+     y1="827"
+     y2="962"
+     class="net_13"
+     id="line4357" />
+  <line
+     x1="1657"
+     x2="1811"
+     y1="962"
+     y2="962"
+     class="net_13"
+     id="line4359" />
+  <line
+     x1="1811"
+     x2="1811"
+     y1="962"
+     y2="1255.5"
+     class="net_13"
+     id="line4361" />
+  <line
+     x1="1811"
+     x2="1851"
+     y1="1255.5"
+     y2="1255.5"
+     class="net_13"
+     id="line4363" />
+  <line
+     x1="1708"
+     x2="1718"
+     y1="299.5"
+     y2="299.5"
+     class="net_77"
+     id="line4365" />
+  <line
+     x1="1718"
+     x2="1718"
+     y1="299.5"
+     y2="374.5"
+     class="net_77"
+     id="line4367" />
+  <circle
+     cx="1718"
+     cy="299.5"
+     r="2"
+     style="fill:#000"
+     class="net_77"
+     id="circle4369" />
+  <line
+     x1="1718"
+     x2="1746"
+     y1="374.5"
+     y2="374.5"
+     class="net_77"
+     id="line4371" />
+  <line
+     x1="1708"
+     x2="1745"
+     y1="299.5"
+     y2="299.5"
+     class="net_77"
+     id="line4373" />
+  <line
+     x1="1704"
+     x2="1728"
+     y1="239.5"
+     y2="239.5"
+     class="net_78"
+     id="line4375" />
+  <line
+     x1="1728"
+     x2="1728"
+     y1="239.5"
+     y2="314.5"
+     class="net_78"
+     id="line4377" />
+  <line
+     x1="1728"
+     x2="1745"
+     y1="314.5"
+     y2="314.5"
+     class="net_78"
+     id="line4379" />
+  <line
+     x1="1857"
+     x2="1894"
+     y1="1185.5"
+     y2="1185.5"
+     class="net_2,10,11,12,13,14,15,16,17,18,79,80"
+     id="line4381" />
+  <line
+     x1="87.5"
+     x2="87.5"
+     y1="175"
+     y2="194"
+     class="net_2"
+     id="line4383" />
+  <line
+     x1="87.5"
+     x2="1851.5"
+     y1="194"
+     y2="194"
+     class="net_2"
+     id="line4385" />
+  <line
+     x1="1851.5"
+     x2="1851.5"
+     y1="194"
+     y2="1175"
+     class="net_2"
+     id="line4387" />
+  <line
+     x1="1781"
+     x2="1841"
+     y1="307"
+     y2="307"
+     class="net_10"
+     id="line4389" />
+  <line
+     x1="1841"
+     x2="1841"
+     y1="307"
+     y2="1195.5"
+     class="net_10"
+     id="line4391" />
+  <line
+     x1="1841"
+     x2="1851"
+     y1="1195.5"
+     y2="1195.5"
+     class="net_10"
+     id="line4393" />
+  <line
+     x1="1781"
+     x2="1831"
+     y1="367"
+     y2="367"
+     class="net_11"
+     id="line4395" />
+  <line
+     x1="1831"
+     x2="1831"
+     y1="367"
+     y2="1215.5"
+     class="net_11"
+     id="line4397" />
+  <line
+     x1="1831"
+     x2="1851"
+     y1="1215.5"
+     y2="1215.5"
+     class="net_11"
+     id="line4399" />
+  <line
+     x1="1781"
+     x2="1821"
+     y1="932"
+     y2="932"
+     class="net_12"
+     id="line4401" />
+  <line
+     x1="1821"
+     x2="1821"
+     y1="932"
+     y2="1235.5"
+     class="net_12"
+     id="line4403" />
+  <line
+     x1="1821"
+     x2="1851"
+     y1="1235.5"
+     y2="1235.5"
+     class="net_12"
+     id="line4405" />
+  <line
+     x1="1781"
+     x2="1801"
+     y1="1018"
+     y2="1018"
+     class="net_14"
+     id="line4407" />
+  <line
+     x1="1801"
+     x2="1801"
+     y1="1018"
+     y2="1275.5"
+     class="net_14"
+     id="line4409" />
+  <line
+     x1="1801"
+     x2="1851"
+     y1="1275.5"
+     y2="1275.5"
+     class="net_14"
+     id="line4411" />
+  <line
+     x1="1781"
+     x2="1791"
+     y1="1166"
+     y2="1166"
+     class="net_15"
+     id="line4413" />
+  <line
+     x1="1791"
+     x2="1791"
+     y1="1166"
+     y2="1295.5"
+     class="net_15"
+     id="line4415" />
+  <line
+     x1="1791"
+     x2="1851"
+     y1="1295.5"
+     y2="1295.5"
+     class="net_15"
+     id="line4417" />
+  <line
+     x1="1781"
+     x2="1791"
+     y1="1302"
+     y2="1302"
+     class="net_16"
+     id="line4419" />
+  <line
+     x1="1791"
+     x2="1791"
+     y1="1302"
+     y2="1315.5"
+     class="net_16"
+     id="line4421" />
+  <line
+     x1="1791"
+     x2="1851"
+     y1="1315.5"
+     y2="1315.5"
+     class="net_16"
+     id="line4423" />
+  <line
+     x1="1775.6666666666667"
+     x2="1851"
+     y1="1355.5"
+     y2="1355.5"
+     class="net_18"
+     id="line4425" />
+  <line
+     x1="1775"
+     x2="1851.5"
+     y1="1423"
+     y2="1423"
+     class="net_79,80"
+     id="line4427" />
+  <line
+     x1="1851.5"
+     x2="1851.5"
+     y1="1423"
+     y2="1376"
+     class="net_79,80"
+     id="line4429" />
+  <line
+     x1="40"
+     x2="83"
+     y1="44.5"
+     y2="44.5"
+     class="net_2,3,4,5,6,7,8,9"
+     id="line4431" />
+</svg>

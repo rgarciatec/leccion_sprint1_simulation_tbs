@@ -1,5 +1,7 @@
 # LECCION6 Simulation TBs
 
+AI usage disclaimer: This README and the related project documentation were created or assisted using AI tooling. The content was reviewed and adapted to match the project workflow and toolchain requirements.
+
 This repository includes a small FPGA-style design and a set of simulation flows:
 
 - RTL functional simulation in Questa
@@ -8,15 +10,41 @@ This repository includes a small FPGA-style design and a set of simulation flows
 
 The purpose is to keep the design source clean, while separating local generated artifacts from the committed project files.
 
+## System block diagram
+This is a very simplified diagram of the system, switches[9:0] as inputs and output gets displayed in seven segments displays (HEX[3:0])
+
+![System block diagram](./leccion6_block_diagram.svg)
+
 ## Project structure
 
-- `blocks/` : RTL blocks such as the BCD decoders and 7-segment decoder
-- `pkg/` : package definitions used across modules
-- `top/` : integration module used at the top level
-- `tb/` : testbenches and per-block Makefiles
-- `quartus/` : Quartus project and constraints
-- `synth/` : synthesis and Yosys related scripts
-- `lint/` : lint rules and waiver configuration
+- [blocks/README.md](blocks/README.md) : RTL block overview
+- [pkg/README.md](pkg/README.md) : shared package definitions
+- [top/README.md](top/README.md) : top-level design overview
+- [tb/README.md](tb/README.md) : testbench directory guide
+- [quartus/README.md](quartus/README.md) : Quartus project build and programming flow
+- [synth/README.md](synth/README.md) : Yosys synthesis workflow
+- [lint/README.md](lint/README.md) : Verible lint and waiver setup
+
+## Prerequisites
+
+This project is specific to the Terasic Cyclone V board with the following device mapping in the Quartus project:
+
+- Family: Cyclone V
+- Device: 5CGXFC5C6F27C7
+- Board: Terasic Cyclone V development board
+- Reference: https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=165&No=830
+
+The expected toolchain is:
+
+- Intel Quartus Prime Lite / Standard with Cyclone V support
+- Questa Intel FPGA Edition (or compatible ModelSim/Questa simulator)
+- Yosys from the OSS CAD Suite build
+- Verible SystemVerilog linter
+- make
+- Git
+- optionally: Graphviz and SVG viewer tools such as Inkscape or xdot
+
+Important: this is not a generic FPGA project. The pin assignments and device IDs are tied to the board family and part number above, so the design is expected to run on this specific hardware and device configuration.
 
 ## 1) RTL simulation
 
@@ -146,7 +174,30 @@ Generated files such as:
 
 should not be committed to source control. The repository uses `.gitignore` to keep the source tree clean and focused on actual design files.
 
-## 6) Recommended workflow
+## 6) Local README index
+
+Use these project-local guides for more detailed instructions:
+
+- [tb/top/README.md](tb/top/README.md) : top-level testbench and simulation flow
+- [tb/bin2bcd/README.md](tb/bin2bcd/README.md) : binary-to-BCD verification flow
+- [tb/bcd2seven_seg/README.md](tb/bcd2seven_seg/README.md) : 7-segment decoder validation flow
+- [quartus/README.md](quartus/README.md) : Quartus build and programming flow
+- [synth/README.md](synth/README.md) : Yosys and synthesis workflow
+- [lint/README.md](lint/README.md) : Verible linting and waiver setup
+
+## 7) References and source material
+
+This documentation is based on the actual project files in the repository, especially:
+
+- [quartus/top.qsf](quartus/top.qsf) : Quartus project configuration and source list
+- [quartus/top.sdc](quartus/top.sdc) : timing constraints used by the FPGA project
+- [top/top.sv](top/top.sv) : top-level design under test
+- [tb/top/Makefile](tb/top/Makefile) : RTL and GLS simulation flow
+- [tb/top/top_tb.sv](tb/top/top_tb.sv) : top-level verification testbench
+- [tb/bcd2seven_seg/bcd2seven_seg_tb.sv](tb/bcd2seven_seg/bcd2seven_seg_tb.sv) : 7-segment decoder checks
+- [tb/bin2bcd/bin2bcd_dual_tb.sv](tb/bin2bcd/bin2bcd_dual_tb.sv) : decoder comparison testbench
+
+## 8) Recommended workflow
 
 For day-to-day development:
 

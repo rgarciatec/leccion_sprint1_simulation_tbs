@@ -7,6 +7,12 @@ This folder contains a tiny, repeatable flow for synthesizing the `bin2bcd` deco
 - a generic gate-level netlist
 - an Intel FPGA-oriented netlist for an ALM-style target
 
+## Generated gate diagrams
+
+![Brute-force gate synthesis diagram](./sch_gate_brute_force.svg)
+
+![Double-dabble gate synthesis diagram](./sch_gates_double_dabble.svg)
+
 The automation is driven by the `Makefile` and the two script files:
 
 - `synth_gates.ys` — generic gate synthesis
@@ -411,3 +417,17 @@ This folder is a small synthesis playground:
 The key idea is to look at both the produced netlists and the graphs to understand how Yosys transforms your design from RTL/SystemVerilog into hardware.
 
 If you want to learn from this flow, focus on the generated SVGs and the final `.sv` outputs, because they reveal the structure of the synthesized circuit much more clearly than the raw source code alone.
+
+## 9. Sample svg diagrams using netlistsvg
+Is not covered in this tutorial but using a command like below
+```bash
+netlistsvg gate_brute_force.json -o sch_gate_brute_force.svg
+```
+
+This will  translate into something like this:
+
+Brute force
+![Alt text](./sch_gate_brute_force.svg)
+
+Double dabble
+![Alt text](./sch_gates_double_dabble.svg)
