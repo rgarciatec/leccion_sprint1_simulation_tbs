@@ -9,7 +9,11 @@ This folder contains a tiny, repeatable flow for synthesizing the `bin2bcd` deco
 
 ## Committed gate-diagram examples
 
+Brute force binary to bcd decoder netlist
+
 ![Brute-force gate synthesis diagram](./sch_gate_brute_force.svg)
+
+Double-dabble algorithm binary to bcd decoder netlist
 
 ![Double-dabble gate synthesis diagram](./sch_gates_double_dabble.svg)
 
