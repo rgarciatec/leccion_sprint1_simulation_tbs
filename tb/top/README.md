@@ -87,6 +87,12 @@ make run_debug  # GUI + auto-run
 
 This compiles the RTL and testbench, then runs in Questa. No Quartus required.
 
+The GUI targets pass `-debugdb` to Questa so that the schematic/debug database
+is generated during elaboration:
+
+- `make debug` creates `top_tb.dbg`
+- `make run_debug` creates `top_tb.dbg` and runs the simulation
+
 ## Post-Fit / GLS Simulation
 
 After building Quartus:
@@ -103,11 +109,18 @@ The `gls` target:
 
 1. Compiles Intel FPGA simulation libraries
 2. Locates the generated netlist `top.svo`
-3. Compiles the netlist into Questa
-4. Applies SDF delay file if available
-5. Runs the testbench against the post-fit netlist
+3. Compiles the post-fit netlist into Questa
+4. Compiles `../../pkg/top_pkg.sv` before `top_tb.sv`, because the testbench imports `top_pkg`
+5. Runs the functional post-fit netlist without SDF/SDO delay annotation
+6. Runs the testbench against the post-fit netlist
 
-**Important:** `top.sft` is a Quartus metadata file, not a valid SDF. Real delay files are `.sdo` or `.sdf`.
+**Important:** `top.sft` is a Quartus metadata file, not a valid SDF. For
+this Cyclone V target, Quartus generates a functional zero-delay netlist and
+does not provide an SDF/SDO timing model for this flow. Use `quartus_sta` and
+the SDC constraints for timing analysis and sign-off.
+
+The `gui_gls` target passes `-debugdb` and creates `top_tb_gls.dbg` for the
+post-fit schematic/debug view.
 
 ## Common Targets
 

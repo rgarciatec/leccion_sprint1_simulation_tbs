@@ -42,6 +42,7 @@ synth/*.log
 synth/*.svg
 synth/*.json
 synth/*.v
+synth/*.sv
 synth/*.vcd
 synth/*.dot
 synth/*.rpt

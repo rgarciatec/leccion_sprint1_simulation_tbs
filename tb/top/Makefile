@@ -13,6 +13,8 @@ SRC_FILES += $(TB_NAME).sv
 LOG_FILE := transcript.log
 WLF_FILE := $(TB_NAME).wlf
 DEBUG_NAME := $(TB_NAME)_dbg
+DEBUG_DB := $(TB_NAME).dbg
+GLS_DEBUG_DB := $(TB_NAME)_gls.dbg
 
 # Quartus post-fit netlist / delay files
 QUARTUS_ROOTDIR ?= /home/rongar01/intelFPGA_lite/24.1std/quartus
@@ -21,6 +23,7 @@ QUARTUS_LIBS = altera_primitives.v 220model.v sgate.v altera_mf.v altera_lnsim.s
 POSTFIT_DIRS = ../../quartus/simulation/questa ../../quartus/simulation ../../quartus
 POSTFIT_BASENAME = top
 SDF_TARGET = /$(TB_NAME)/u_dut
+GLS_TB_SRC_FILES = ../../pkg/top_pkg.sv $(TB_NAME).sv
 
 .PHONY: rtl run debug run_debug compile compile_quartus_libs compile_postfit simulate_postfit gui_postfit clean
 
@@ -34,12 +37,12 @@ rtl: compile
 run: rtl
 
 debug: compile
-	vopt +acc=npr work.$(TB_NAME) -o $(DEBUG_NAME)
-	vsim -gui -wlf $(WLF_FILE) $(DEBUG_NAME) -l $(LOG_FILE) -do "log -r /$(TB_NAME)/*; add wave -r /$(TB_NAME)/*"
+	vopt +acc=npr -debugdb work.$(TB_NAME) -o $(DEBUG_NAME)
+	vsim -gui -debugdb=$(DEBUG_DB) -postsimdataflow -wlf $(WLF_FILE) $(DEBUG_NAME) -l $(LOG_FILE) -do "log -r /$(TB_NAME)/*; add wave -r /$(TB_NAME)/*"
 
 run_debug: compile
-	vopt +acc=npr work.$(TB_NAME) -o $(DEBUG_NAME)
-	vsim -gui -wlf $(WLF_FILE) $(DEBUG_NAME) -l $(LOG_FILE) -do "log -r /$(TB_NAME)/*; add wave -r /$(TB_NAME)/*; run -all"
+	vopt +acc=npr -debugdb work.$(TB_NAME) -o $(DEBUG_NAME)
+	vsim -gui -debugdb=$(DEBUG_DB) -postsimdataflow -wlf $(WLF_FILE) $(DEBUG_NAME) -l $(LOG_FILE) -do "log -r /$(TB_NAME)/*; add wave -r /$(TB_NAME)/*; run -all"
 
 # Quartus/Intel library compilation for GLS
 compile_quartus_libs:
@@ -59,7 +62,7 @@ compile_postfit: compile_quartus_libs
 	done; \
 	if [ "$$NETLIST" != "" ]; then \
 		echo "Found post-fit netlist: $$NETLIST"; \
-		vlog -work work $$NETLIST; \
+		vlog -sv -work work $$NETLIST; \
 	else \
 		echo "Warning: post-fit netlist not found in $(POSTFIT_DIRS); RTL simulation only."; \
 	fi
@@ -67,7 +70,7 @@ compile_postfit: compile_quartus_libs
 # Run GLS if a real timing delay file exists
 simulate_postfit: compile_postfit
 	@echo "Compiling testbench for post-fit timing simulation..."
-	vlog -work work $(TB_NAME).sv -l $(LOG_FILE)
+	vlog -sv -work work $(GLS_TB_SRC_FILES) -l $(LOG_FILE)
 	vopt work.$(TB_NAME) -o $(TB_NAME)_gls
 	@SDO=""; \
 	for d in $(POSTFIT_DIRS); do \
@@ -89,8 +92,8 @@ gls: simulate_postfit
 # GUI version with optional SDF if available
 gui_postfit: compile_postfit
 	@echo "Building debug image for GUI..."
-	vlog -work work $(TB_NAME).sv -l $(LOG_FILE)
-	vopt +acc=npr work.$(TB_NAME) -o $(TB_NAME)_dbg_gls
+	vlog -sv -work work $(GLS_TB_SRC_FILES) -l $(LOG_FILE)
+	vopt +acc=npr -debugdb work.$(TB_NAME) -o $(TB_NAME)_dbg_gls
 	@SDO=""; \
 	for d in $(POSTFIT_DIRS); do \
 		if [ -f $$d/$(POSTFIT_BASENAME)_v.sdo ]; then SDO=$$d/$(POSTFIT_BASENAME)_v.sdo; break; fi; \
@@ -100,14 +103,14 @@ gui_postfit: compile_postfit
 	done; \
 	if [ "$$SDO" != "" ]; then \
 		echo "Launching Questa GUI with SDF: $$SDO"; \
-		vsim $(TB_NAME)_dbg_gls -wlf $(WLF_FILE) -sdftyp $(SDF_TARGET)=$$SDO -do "log -r /*; add wave -r /*"; \
+		vsim -gui -debugdb=$(GLS_DEBUG_DB) -postsimdataflow $(TB_NAME)_dbg_gls -wlf $(WLF_FILE) -sdftyp $(SDF_TARGET)=$$SDO -do "log -r /*; add wave -r /*"; \
 	else \
 		echo "Launching Questa GUI without SDF"; \
-		vsim $(TB_NAME)_dbg_gls -wlf $(WLF_FILE) -do "log -r /*; add wave -r /*"; \
+		vsim -gui -debugdb=$(GLS_DEBUG_DB) -postsimdataflow $(TB_NAME)_dbg_gls -wlf $(WLF_FILE) -do "log -r /*; add wave -r /*"; \
 	fi
 
 gui_gls: gui_postfit
 
 clean:
 	rm -rf work
-	rm -f $(WLF_FILE) $(LOG_FILE)
+	rm -f $(WLF_FILE) $(LOG_FILE) $(DEBUG_DB) $(GLS_DEBUG_DB)

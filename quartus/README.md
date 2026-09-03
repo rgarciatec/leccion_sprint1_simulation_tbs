@@ -47,7 +47,12 @@ The Quartus workflow is intentionally separated into stages:
 4. `quartus_sta`
 5. `quartus_eda`
 
-This is the right flow for generating the post-fit netlist and timing artifacts used in a GLS simulation.
+This flow generates the post-fit functional netlist used by GLS and runs
+static timing analysis using the SDC constraints.
+
+For the Cyclone V target used here, Quartus generates a functional zero-delay
+structural netlist. Timing-annotated SDF/SDO GLS is not available for this
+device flow, so timing sign-off must be performed with `quartus_sta`.
 
 ## Important device note
 
