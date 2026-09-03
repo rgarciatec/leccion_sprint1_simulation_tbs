@@ -111,11 +111,6 @@ The correct flow is:
 3. Compile the generated post-fit netlist
 4. Run the testbench with `-sdftyp` only if a real delay file exists
 
-The reference pattern is in:
-
-```text
-leccion2_hdl_intro/sprint0/tests/sv/Makefile
-```
 
 The key idea is that the generated netlist references FPGA primitive modules such as:
 
@@ -123,6 +118,8 @@ The key idea is that the generated netlist references FPGA primitive modules suc
 - other Intel primitive definitions
 
 Those modules are not part of the normal RTL simulation library. They only exist in the Quartus simulation library, so you must compile them first.
+
+A Quartus GUI based tutorial can be found here https://www.youtube.com/watch?v=YSQnVqXt3do
 
 ## 4) Top-level project usage
 
