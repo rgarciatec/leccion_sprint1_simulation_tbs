@@ -1,6 +1,6 @@
-# Top-level testbench and simulation flow
+# Top-Level Testbench and Simulation Flow
 
-AI usage disclaimer: This README was created or assisted using AI tooling. It was reviewed and adjusted to reflect the actual RTL and post-fit simulation flow used in this project.
+> AI usage disclaimer: This README was created or assisted using AI tooling. It was reviewed and adjusted to reflect the actual RTL and post-fit simulation flow used in this project.
 
 This folder contains the validation setup for the full top-level design, not just the individual blocks.
 
@@ -40,112 +40,95 @@ The testbench enumerates all possible switch values from `0` to `1023` and valid
 
 The testbench uses a short settle delay and compares against a function-based expected value model.
 
-## RTL simulation workflow
+## Tool Setup
+
+### Questa
+
+Ensure `vlib`, `vlog`, and `vsim` are in your `$PATH`:
+
+```bash
+export PATH="/path/to/questa/bin:$PATH"
+```
+
+### Quartus (for GLS flows only)
+
+The Makefile uses `QUARTUS_ROOTDIR` to locate simulation libraries for post-fit flows.
+
+**Default (hardcoded):**
+```makefile
+QUARTUS_ROOTDIR ?= /home/rongar01/intelFPGA_lite/24.1std/quartus
+```
+
+Override with your installation:
+
+```bash
+# Via command line
+make gls QUARTUS_ROOTDIR=/opt/intelFPGA_lite/24.1/quartus
+
+# Via environment variable
+export QUARTUS_ROOTDIR=/opt/intelFPGA_lite/24.1/quartus
+make gls
+```
+
+Verify the path:
+```bash
+ls $QUARTUS_ROOTDIR/eda/sim_lib/cyclonev_atoms.v
+```
+
+## RTL Simulation Workflow
 
 From this directory:
 
 ```bash
-make run
+make run        # batch simulation
+make debug      # GUI debug session
+make run_debug  # GUI + auto-run
 ```
 
-This does the usual flow:
+This compiles the RTL and testbench, then runs in Questa. No Quartus required.
 
-```bash
-vlib work
-vlog -sv ...
-vsim -c work.top_tb -do "run -all; quit"
-```
+## Post-Fit / GLS Simulation
 
-For interactive debugging:
-
-```bash
-make debug
-```
-
-or
-
-```bash
-make run_debug
-```
-
-These targets create a GUI session and log the relevant signal hierarchy.
-
-## Quartus / GLS flow
-
-This folder also supports a post-fit simulation flow. This part is intentionally separate from the standard RTL simulation because it loads the generated FPGA netlist produced by Quartus.
-
-Follow this sequence:
-
-1. Build the Quartus project in the parent `quartus/` folder
-2. Run the post-fit flow from this directory
-
-Example:
+After building Quartus:
 
 ```bash
 cd ../../quartus
 make all
 cd ../tb/top
-make gls
+make gls        # post-fit simulation
+make gui_gls    # GUI post-fit session
 ```
 
-The `gls` target performs the post-fit flow:
+The `gls` target:
 
-- compile Intel FPGA simulation libraries
-- locate the generated netlist `top.svo`
-- compile the netlist into the Questa work library
-- look for a real delay file (`.sdo` or `.sdf`)
-- apply it with `-sdftyp` if it exists
-- otherwise run the post-fit netlist without SDF
+1. Compiles Intel FPGA simulation libraries
+2. Locates the generated netlist `top.svo`
+3. Compiles the netlist into Questa
+4. Applies SDF delay file if available
+5. Runs the testbench against the post-fit netlist
 
-This behavior is intentionally defensive. It avoids failing on Quartus metadata files such as `.sft`, which are not real timing files.
+**Important:** `top.sft` is a Quartus metadata file, not a valid SDF. Real delay files are `.sdo` or `.sdf`.
 
-## Important note about SDF files
-
-The generated Quartus output folder may contain files such as:
-
-- `top.svo`
-- `top.sft`
-
-But `top.sft` is not a valid delay file for `vsim -sdftyp`. It is a Quartus settings/metadata file.
-
-The actual delay file must be a real SDF/SDO file, if Quartus generated one for your flow.
-
-## Common targets
+## Common Targets
 
 ```bash
 make run        # batch RTL simulation
 make debug      # GUI RTL debug
-make run_debug  # GUI RTL debug + auto run
-make gls        # post-fit / GLS run when Quartus outputs exist
+make run_debug  # GUI RTL + auto-run
+make gls        # post-fit / GLS simulation
 make gui_gls    # GUI GLS session
-make clean      # remove work library and generated logs
+make clean      # remove work library and logs
 ```
 
-## Why this is a separate flow
+## Why Separate RTL and GLS Flows
 
-Plain RTL simulation checks your source logic in isolation.
-GLS checks the actual post-fit FPGA implementation, including primitive mapping and timing annotation.
+Plain RTL simulation checks source logic. GLS checks the post-fit FPGA implementation with primitives and timing. This Makefile supports both paths independently.
 
-This is why the Makefile has two different paths.
+## References
 
-## References and source material
+- [../../quartus/top.qsf](../../quartus/top.qsf) : Quartus project configuration
+- [../../quartus/top.sdc](../../quartus/top.sdc) : timing constraints
+- [../../top/top.sv](../../top/top.sv) : top-level design
+- [../../tb/top/top_tb.sv](../../tb/top/top_tb.sv) : testbench source
+- [Makefile](Makefile) : RTL and GLS simulation orchestration
 
-This document reflects the actual implementation and validation files used by the project, including:
-
-- [../../quartus/top.qsf](../../quartus/top.qsf) : Quartus project configuration and testbench assignments
-- [../../quartus/top.sdc](../../quartus/top.sdc) : SDC timing constraints
-- [../../top/top.sv](../../top/top.sv) : integrated design under test
-- [../../tb/top/top_tb.sv](../../tb/top/top_tb.sv) : full-system verification testbench
-- [../../tb/bcd2seven_seg/bcd2seven_seg_tb.sv](../../tb/bcd2seven_seg/bcd2seven_seg_tb.sv) : block-level 7-segment decoder testbench
-- [../../tb/bin2bcd/bin2bcd_dual_tb.sv](../../tb/bin2bcd/bin2bcd_dual_tb.sv) : decoder comparison testbench
-- [../../tb/top/Makefile](../../tb/top/Makefile) : RTL and GLS target flow
-
-## Repo hygiene
-
-Generated artifacts such as:
-
-- `work/`
-- `transcript.log`
-- `*.wlf`
-
-are local simulation outputs and should not be committed to the repository.
