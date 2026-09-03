@@ -1,21 +1,46 @@
 # LECCION6 Simulation TBs
 
-AI usage disclaimer: This README and the related project documentation were created or assisted using AI tooling. The content was reviewed and adapted to match the project workflow and toolchain requirements.
+AI usage disclaimer: This README and the related project documentation were created or assisted using AI tooling. The content was reviewed and adapted to match the project workflow and toolchain referenced in the Makefile and source files.
 
-This repository includes a small FPGA-style design and a set of simulation flows:
+## Table of Contents
 
-- RTL functional simulation in Questa
-- Quartus project build and netlist generation
-- optional post-fit / GLS simulation using the generated netlist and delay data
+- [Overview](#overview)
+- [System Block Diagram](#system-block-diagram)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Workflows](#workflows)
+  - [1) RTL Simulation](#1-rtl-simulation)
+  - [2) Synthesis with Yosys](#2-synthesis-with-yosys)
+  - [3) Linting with Verible](#3-linting-with-verible)
+  - [4) Quartus Build and Netlist](#4-quartus-build-and-generated-netlist)
+  - [5) GLS / Post-fit Simulation](#5-gls--post-fit-simulation)
+  - [6) Top-level Project Usage](#6-top-level-project-usage)
+- [Why GLS is More Complicated](#why-the-gls-flow-is-more-complicated)
+- [Working with Generated Files](#5-working-with-generated-files)
+- [Local README Index](#6-local-readme-index)
+- [References](#7-references-and-source-material)
+- [Recommended Workflow](#8-recommended-workflow)
+- [Repository Hygiene](#repo-hygiene-notes)
+
+## Overview
+
+This repository includes a small FPGA-style design with a comprehensive verification and development toolchain:
+
+- **RTL functional simulation** in Questa
+- **Synthesis flow** using Yosys (open-source synthesis)
+- **Linting and code analysis** with Verible (SystemVerilog linter)
+- **Quartus project build** and netlist generation
+- **Optional post-fit / GLS simulation** using the generated netlist and delay data
 
 The purpose is to keep the design source clean, while separating local generated artifacts from the committed project files.
 
-## System block diagram
+## System Block Diagram
+
 This is a very simplified diagram of the system, switches[9:0] as inputs and output gets displayed in seven segments displays (HEX[3:0])
 
 ![System block diagram](./leccion6_block_diagram.svg)
 
-## Project structure
+## Project Structure
 
 - [blocks/README.md](blocks/README.md) : RTL block overview
 - [pkg/README.md](pkg/README.md) : shared package definitions
@@ -44,9 +69,11 @@ The expected toolchain is:
 - Git
 - optionally: Graphviz and SVG viewer tools such as Inkscape or xdot
 
-Important: this is not a generic FPGA project. The pin assignments and device IDs are tied to the board family and part number above, so the design is expected to run on this specific hardware and device configuration.
+Important: this is not a generic FPGA project. The pin assignments and device IDs are tied to the board family and part number above, so the design is expected to run on this specific hardware and not be easily portable to other boards without modifying pin assignments and device settings.
 
-## 1) RTL simulation
+## Workflows
+
+### 1) RTL Simulation
 
 This is the normal development loop. It checks logical behavior without involving FPGA primitives or post-fit timing.
 
@@ -75,7 +102,60 @@ What these do:
 
 This is the fastest path for catching logic bugs while developing the RTL.
 
-## 2) Quartus build and generated netlist
+### 2) Synthesis with Yosys
+
+The Yosys synthesis flow provides an open-source alternative for netlist generation and analysis, independent of Quartus.
+
+From the synthesis folder:
+
+```bash
+cd synth
+make
+```
+
+This generates:
+
+- Post-synthesis netlist
+- Resource utilization reports
+- Timing analysis (when timing constraints are applied)
+
+Benefits:
+
+- Fast synthesis turnaround for design iteration
+- Open-source toolchain (no proprietary software required)
+- Direct control over synthesis options and strategies
+- Useful for design exploration and optimization
+
+See [synth/README.md](synth/README.md) for detailed setup and usage.
+
+### 3) Linting with Verible
+
+Code quality and style checking using the Verible SystemVerilog linter.
+
+From the lint folder:
+
+```bash
+cd lint
+make lint
+```
+
+This:
+
+- Checks all RTL files for syntax, style, and naming conventions
+- Applies project-specific rules via `custom_rules_verible_lint.txt`
+- Suppresses intentional exceptions via `waivers.txt`
+- Captures results to `verible_lint.log`
+
+Benefits:
+
+- Catches style issues early in development
+- Enforces consistent naming and code structure
+- Non-invasive (does not require compilation or simulation)
+- Easily integrated into CI/CD pipelines
+
+See [lint/README.md](lint/README.md) for rule configuration and waiver examples.
+
+### 4) Quartus Build and Generated Netlist
 
 The FPGA build is separate from the RTL simulation. Quartus generates post-fit outputs used for timing-aware checking.
 
@@ -98,9 +178,9 @@ Typical output you may see there:
 - `top.sft` : Quartus-generated settings file, not a true SDF delay file
 - additional generated project artifacts in `output_files/` and `db/`
 
-Important: `top.sft` is not the file you pass to `-sdftyp` in Questa. It is a Quartus metadata/settings file, not a timing delay file. The real delay file must be a `.sdo` or `.sdf` generated for post-fit timing, if present.
+Important: `top.sft` is not the file you pass to `-sdftyp` in Questa. It is a Quartus metadata/settings file, not a timing delay file. The real delay file must be a `.sdo` or `.sdf` generated for the specific compilation output, and Quartus does not always provide this in Lite editions.
 
-## 3) GLS / post-fit simulation
+### 5) GLS / Post-fit Simulation
 
 This is a different flow from plain RTL simulation. It loads the FPGA netlist and optionally applies delay information.
 
@@ -111,7 +191,6 @@ The correct flow is:
 3. Compile the generated post-fit netlist
 4. Run the testbench with `-sdftyp` only if a real delay file exists
 
-
 The key idea is that the generated netlist references FPGA primitive modules such as:
 
 - `cyclonev_lcell_comb`
@@ -121,7 +200,7 @@ Those modules are not part of the normal RTL simulation library. They only exist
 
 A Quartus GUI based tutorial can be found here https://www.youtube.com/watch?v=YSQnVqXt3do
 
-## 4) Top-level project usage
+### 6) Top-level Project Usage
 
 From the top-level TB folder:
 
@@ -142,7 +221,7 @@ Meaning:
 - `make gls` : post-fit netlist flow when Quartus output exists
 - `make gui_gls` : interactive post-fit GUI flow
 
-## Why the GLS flow is more complicated
+## Why the GLS Flow is More Complicated
 
 This part often feels confusing because it mixes three layers:
 
@@ -158,7 +237,7 @@ Module 'cyclonev_lcell_comb' is not defined
 
 This means the generated netlist was loaded, but the corresponding Quartus primitive library was not compiled into the Questa work library.
 
-## 5) Working with generated files
+## 5) Working with Generated Files
 
 Generated files such as:
 
@@ -171,7 +250,7 @@ Generated files such as:
 
 should not be committed to source control. The repository uses `.gitignore` to keep the source tree clean and focused on actual design files.
 
-## 6) Local README index
+## 6) Local README Index
 
 Use these project-local guides for more detailed instructions:
 
@@ -182,7 +261,7 @@ Use these project-local guides for more detailed instructions:
 - [synth/README.md](synth/README.md) : Yosys and synthesis workflow
 - [lint/README.md](lint/README.md) : Verible linting and waiver setup
 
-## 7) References and source material
+## 7) References and Source Material
 
 This documentation is based on the actual project files in the repository, especially:
 
@@ -194,13 +273,27 @@ This documentation is based on the actual project files in the repository, espec
 - [tb/bcd2seven_seg/bcd2seven_seg_tb.sv](tb/bcd2seven_seg/bcd2seven_seg_tb.sv) : 7-segment decoder checks
 - [tb/bin2bcd/bin2bcd_dual_tb.sv](tb/bin2bcd/bin2bcd_dual_tb.sv) : decoder comparison testbench
 
-## 8) Recommended workflow
+## 8) Recommended Workflow
 
 For day-to-day development:
 
 ```bash
 cd tb/top
 make run
+```
+
+To check code quality with linting:
+
+```bash
+cd lint
+make lint
+```
+
+For synthesis exploration:
+
+```bash
+cd synth
+make
 ```
 
 When you want to check the FPGA timing view:
@@ -214,11 +307,12 @@ make gls
 
 If the post-fit delay file is not present, the GLS flow should degrade gracefully and still run the post-fit netlist without SDF rather than failing on a bogus file.
 
-## Repo hygiene notes
+## Repo Hygiene Notes
 
 - Keep source files in the repo
-- keep generated artifacts local
-- do not commit Quartus build outputs or simulation artifacts
-- treat `top.sft` as a Quartus metadata file, not as a Questa SDF input
+- Keep generated artifacts local
+- Do not commit Quartus build outputs or simulation artifacts
+- Treat `top.sft` as a Quartus metadata file, not as a Questa SDF input
+- Run lint checks before committing to catch style issues early
 
 This keeps the project reproducible and avoids cluttering the repository with generated output.
